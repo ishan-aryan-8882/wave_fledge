@@ -17,15 +17,18 @@ $(document).ready(function () {
 
     // Check if the clicked image has the class 'light-page'
     if ($(this).hasClass("light-page")) {
-      $("body").addClass("light-theme-page");
-      $("body").removeClass("dark-theme-page");
-      $('.click-shy h6 a').addClass('text-secondary')
+        $("body").addClass("light-theme-page");
+        $("body").removeClass("dark-theme-page");
+        $('.click-shy h6 a').addClass('text-secondary');
+        $('.sticky-header').removeClass("dark-theme-page").addClass("light-theme-page");
     } else {
         $("body").addClass("dark-theme-page");
         $("body").removeClass("light-theme-page");
-        $('.click-shy h6 a').removeClass('text-secondary')
+        $('.click-shy h6 a').removeClass('text-secondary');
+        $('.sticky-header').removeClass("light-theme-page").addClass("dark-theme-page");
     }
-  });
+});
+
   //------------end----------------
 
 

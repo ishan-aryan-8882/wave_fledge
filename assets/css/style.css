@@ -76,12 +76,19 @@ body {
   background: var(--bgColor) !important;
 }
 
+.sticky-header{
+  position:sticky !important;
+  top: 0;
+  display: block;
+  background: var(--bgColor);
+}
+
 .top-header {
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid; */
   font-family: "Nohemi-Medium";
+  /* background: var(--bgColor); */
 }
 
 .lang-sh .dropdown > * {
@@ -165,4 +172,13 @@ position: relative;
 
 .click-shy h6 a span{
   color: gray;
+}
+
+@media (max-width:768px) {
+  .sticky-header .click-shy{
+    display: none;
+  }
+  .top-header{
+    flex-direction: row-reverse;
+  }
 }
