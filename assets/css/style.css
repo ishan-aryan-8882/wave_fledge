@@ -56,11 +56,11 @@
 }
 
 .dark-theme-page{
-  background: var(--bgColor);
+  background: var(--bgColor) !important;
 }
 
 .light-theme-page{
-  background: white;
+  background: white !important;
 }
 
 .dn-class{
