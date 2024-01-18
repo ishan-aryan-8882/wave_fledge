@@ -48,7 +48,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nohemi-SemiBold";
+  /* font-family: "Nohemi-SemiBold"; */
 }
 
 :root {
@@ -56,5 +56,30 @@
 }
 
 body{
-    background: var(--bgColor);
+    background: var(--bgColor) !important;
+}
+
+.top-header{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    font-family: "Nohemi-Medium";
+}
+
+.lang-sh .dropdown button{
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.lang-sh .dropdown ul{
+    background: transparent;
+    border: none;
+    width: 45px !important;
+}
+
+.top-header .logo a img{
+    width: 32px;
+    height: 20px;
 }
