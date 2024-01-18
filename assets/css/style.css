@@ -54,3 +54,7 @@
 :root {
     --bgColor : #1C1C1D;
 }
+
+body{
+    background: var(--bgColor);
+}
