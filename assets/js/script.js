@@ -19,11 +19,14 @@ $(document).ready(function () {
     if ($(this).hasClass("light-page")) {
       $("body").addClass("light-theme-page");
       $("body").removeClass("dark-theme-page");
+      $('.click-shy h6 a').addClass('text-secondary')
     } else {
-      $("body").addClass("dark-theme-page");
-      $("body").removeClass("light-theme-page");
+        $("body").addClass("dark-theme-page");
+        $("body").removeClass("light-theme-page");
+        $('.click-shy h6 a').removeClass('text-secondary')
     }
   });
-
   //------------end----------------
+
+
 });

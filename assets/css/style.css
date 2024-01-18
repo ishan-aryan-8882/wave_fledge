@@ -147,3 +147,22 @@ body {
 img.dark-page{
   height: 18px;
 }
+
+.click-shy{
+position: relative;
+}
+
+.click-shy h6 a {
+  text-decoration: none;
+}
+
+.click-shy h6 a{
+  color: white; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.click-shy h6 a span{
+  color: gray;
+}
