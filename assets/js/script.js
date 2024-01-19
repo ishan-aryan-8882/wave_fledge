@@ -33,21 +33,16 @@ $(document).ready(function () {
   //------------end----------------
 
   //home page carousel
-  if ($('.home-page-carousel').length) {
-    $('.home-video-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: false,
-      items: 1,
-      dots: false,
-      autoplayTimeout: 500,
-      onInitialized: function (event) {
-       setTimeout(()=>{
-        $(".home-video-carousel").trigger("stop.owl.autoplay");
-       },1000)
-      }
-    });
-  }  
+  $('.home-video-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 1,
+    autoplay: true,
+    dots: false,
+    autoplayTimeout: 3000,
+  });
   //------------end----------------
 
 });
+
