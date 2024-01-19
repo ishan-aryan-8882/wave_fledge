@@ -40,8 +40,13 @@ $(document).ready(function () {
     items: 1,
     autoplay: true,
     dots: false,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 6000,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
   });
+  setTimeout(function() {
+    $('.owl-carousel').trigger('stop.owl.autoplay');
+  }, 6000);
   //------------end----------------
 
 });
