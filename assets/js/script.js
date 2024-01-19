@@ -33,17 +33,19 @@ $(document).ready(function () {
   //------------end----------------
 
   //home page carousel
-  if ($('.home-video-carousel').length) {
+  if ($('.home-page-carousel').length) {
     $('.home-video-carousel').owlCarousel({
       loop: true,
       margin: 10,
       nav: false,
       items: 1,
       dots: false,
-      autoplayTimeout: 1000,
-      // onInitialized: function (event) {
-      //   $(".home-video-carousel").trigger("stop.owl.autoplay");
-      // }
+      autoplayTimeout: 500,
+      onInitialized: function (event) {
+       setTimeout(()=>{
+        $(".home-video-carousel").trigger("stop.owl.autoplay");
+       },1000)
+      }
     });
   }  
   //------------end----------------
