@@ -19,8 +19,10 @@ $(document).ready(function () {
       $("body").addClass("light-theme-page");
       $("body").removeClass("dark-theme-page");
       $(".click-shy h6 a").addClass("text-secondary");
-      $(".sticky-header").removeClass("dark-theme-page").addClass("light-theme-page");
-      $(".dropdown button").addClass('color-gray-imp');
+      $(".sticky-header")
+        .removeClass("dark-theme-page")
+        .addClass("light-theme-page");
+      $(".dropdown button").addClass("color-gray-imp");
     } else {
       $("body").addClass("dark-theme-page");
       $("body").removeClass("light-theme-page");
@@ -33,21 +35,35 @@ $(document).ready(function () {
   //------------end----------------
 
   //home page carousel
-  $('.home-video-carousel').owlCarousel({
+  $(".home-video-carousel").owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
     items: 1,
     autoplay: true,
     dots: false,
-    autoplayTimeout: 6000,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
+    autoplayTimeout: 3000,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
   });
-  setTimeout(function() {
-    $('.owl-carousel').trigger('stop.owl.autoplay');
-  }, 6000);
+  setTimeout(function () {
+    $(".home-video-carousel").trigger("stop.owl.autoplay");
+  }, 3000);
+
   //------------end----------------
 
+  //custom shape below slider
+  $(".slider-below-show").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    items: 1,
+    autoplay: true,
+    dots: false,
+    autoplayTimeout: 2000,
+    smartSpeed: 2000,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn", 
+    mouseDrag: false,
+  });
 });
-
