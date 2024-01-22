@@ -262,20 +262,17 @@ img.dark-page {
 
 .home-page-carousel .home-video-carousel {
   position: relative;
+  width: 100%;
 }
 
-.home-page-carousel .home-video-carousel::after {
+/* .home-page-carousel .home-video-carousel::after {
   position: absolute;
   content: "";
   inset: 0;
   width: 100%;
   background: rgba(37, 37, 37, 0.8);
-}
+} */
 
-.home-page-carousel .home-video-carousel .item video {
-  object-fit: contain;
-  object-position: top right;
-}
 
 .home-carousel-absolute-text-box {
   position: absolute;
@@ -288,7 +285,8 @@ img.dark-page {
   border-radius: 40px;
   margin: 0 auto;
   font-family: "Nohemi-Medium";
-  /* background: red; */
+  width: 100%;
+  background: rgba(38, 38, 38, 0.824);
 }
 
 .home-carousel-absolute-text-box p {
