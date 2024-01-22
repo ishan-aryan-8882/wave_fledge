@@ -427,6 +427,30 @@ img.dark-page {
   animation: fadeInCustom 1s ease-in-out;
 }
 
+.arrow-progress-tracker{
+  position: fixed;
+  bottom: 20px;
+  right:40px;
+}
+
+.arrow-progress-tracker .circular-progress{
+  border: 2px solid #df7e36;
+  padding: 25px;
+  position: fixed;
+  bottom: 20px;
+  right:40px;
+  border-radius: 50%;
+}
+
+.arrow-progress-tracker .fa-solid.fa-arrow-up{
+  color: #df7e36;
+  z-index: 9;
+  position: fixed;
+  bottom: 20px;
+  right:40px;
+  padding: 18px 21px;
+}
+
 /* animations */
 
 @keyframes updown-bounce {

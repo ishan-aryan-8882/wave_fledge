@@ -29,7 +29,7 @@ $(document).ready(function () {
       $(".home-carousel-absolute-text-box a").addClass("gray-text-custom");
       $(".slider-below-show-bg").addClass("invert-color");
       $(".main-navigation").addClass("white-bg");
-      $(".main-navigation ul li a").addClass("text-dark");
+      $(".main-navigation ul li a").addClass("gray-text-custom");
 
 
     } else {
@@ -45,7 +45,7 @@ $(document).ready(function () {
       $(".home-carousel-absolute-text-box a").removeClass("gray-text-custom");
       $(".slider-below-show-bg").removeClass("invert-color");
       $(".main-navigation").removeClass("white-bg");
-      $(".main-navigation ul li a").removeClass("text-dark");
+      $(".main-navigation ul li a").removeClass("gray-text-custom");
     }
   });
   //------------end----------------
@@ -81,5 +81,7 @@ $(document).ready(function () {
     animateIn: "fadeIn",
     mouseDrag: false,
   });
+  
+
   
 });
