@@ -23,6 +23,15 @@ $(document).ready(function () {
         .removeClass("dark-theme-page")
         .addClass("light-theme-page");
       $(".dropdown button").addClass("color-gray-imp");
+      $(".theme-ded").addClass("theme-ded-light");
+      $(".home-carousel-absolute-text-box p").addClass("gray-text-custom");
+      $(".home-carousel-absolute-text-box h2").addClass("gray-text-custom");
+      $(".home-carousel-absolute-text-box a").addClass("gray-text-custom");
+      $(".slider-below-show-bg").addClass("invert-color");
+      $(".main-navigation").addClass("white-bg");
+      $(".main-navigation ul li a").addClass("text-dark");
+
+
     } else {
       $("body").addClass("dark-theme-page");
       $("body").removeClass("light-theme-page");
@@ -30,6 +39,13 @@ $(document).ready(function () {
       $(".sticky-header")
         .removeClass("light-theme-page")
         .addClass("dark-theme-page");
+      $(".theme-ded").removeClass("theme-ded-light");
+      $(".home-carousel-absolute-text-box p").removeClass("gray-text-custom");
+      $(".home-carousel-absolute-text-box h2").removeClass("gray-text-custom");
+      $(".home-carousel-absolute-text-box a").removeClass("gray-text-custom");
+      $(".slider-below-show-bg").removeClass("invert-color");
+      $(".main-navigation").removeClass("white-bg");
+      $(".main-navigation ul li a").removeClass("text-dark");
     }
   });
   //------------end----------------

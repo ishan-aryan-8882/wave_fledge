@@ -64,13 +64,25 @@ a {
   text-decoration: none !important;
 }
 
-.active-main-nav {
-  background: white;
+.gray-text-custom{
+  color: rgb(62, 62, 62) !important;
+}
+
+.invert-color{
+  filter:invert(100%);
+}
+
+.white-bg{
+  background: white !important;
+}
+
+a.active-main-nav {
+  background: white !important;
   color: var(--bgColor) !important;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.89);
 }
 
-.active-main-nav:hover {
+a.active-main-nav:hover {
   background: white !important;
   color: var(--bgColor) !important;
 }
@@ -245,6 +257,20 @@ img.dark-page {
   background: #626268;
   color: white;
 }
+.main-navigation.white-bg li a:hover {
+  background: #626268 !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.main-navigation.white-bg li a.active-main-nav{
+  background: #303032 !important;
+  color: white !important;
+}
+
+.main-navigation.white-bg li a.active-main-nav:hover {
+  background: #303032 !important;
+  color: white !important;
+}
 
 .home-page-carousel {
   position: relative;
@@ -252,7 +278,7 @@ img.dark-page {
   margin-bottom: 100px;
 }
 
-.theme-ded{
+.theme-ded {
   position: absolute;
   background: rgba(42, 42, 42, 0.823);
   border-radius: 40px;
@@ -260,6 +286,10 @@ img.dark-page {
   left: 0;
   z-index: 1;
   height: 100%;
+}
+
+.theme-ded-light{
+  background: rgba(255, 255, 255, 0.515) !important;
 }
 
 .roww {
@@ -289,9 +319,10 @@ img.dark-page {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 40px;
-  margin: 0 auto;
+  margin: auto 0;
   font-family: "Nohemi-Medium";
+  /* border: 2px solid red; */
+  gap: 0;
 }
 
 .home-carousel-absolute-text-box p {
@@ -333,7 +364,8 @@ img.dark-page {
 }
 
 .slider-below-show {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
   bottom: -28%;
   /* background: var(--bgColor); */
   background: url("assets/images/bg-slider.png");
@@ -423,7 +455,7 @@ img.dark-page {
   0% {
     opacity: 0;
   }
-  99%{
+  99% {
     opacity: 0;
   }
   100% {
@@ -432,7 +464,7 @@ img.dark-page {
 }
 
 /* media queries */
-@media (max-width:1400px){
+@media (max-width: 1400px) {
 }
 
 @media (max-width: 1201px) {
