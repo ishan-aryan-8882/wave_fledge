@@ -527,12 +527,12 @@ img.dark-page {
     padding: 20px;
   }
   .slider-below-show {
-    top: 29%;
+    top: 30.2%;
   }
 }
 
 @media (max-width: 459px) {
   .slider-below-show-bg img {
-    top: 170%;
+    top: 180%;
   }
 }
