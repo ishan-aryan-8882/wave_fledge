@@ -210,7 +210,7 @@ img.dark-page {
   padding: 8px;
   border-radius: var(--borderRadius);
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
-  z-index: 10;
+  z-index: 11;
 }
 
 .main-navigation ul {
@@ -381,7 +381,7 @@ img.dark-page {
   width: 15px;
   border-radius: 10px;
   left: 49.5%;
-  animation: updown-bounce 2.5s infinite;
+  animation: updown-bounce 2s infinite;
 }
 
 .slider-below-show .fadeOut {
