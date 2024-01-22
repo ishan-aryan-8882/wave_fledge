@@ -60,10 +60,11 @@ $(document).ready(function () {
     items: 1,
     autoplay: true,
     dots: false,
-    autoplayTimeout: 1500,
-    animateOut: "foc",
-    animateIn: "fic", 
+    autoplayTimeout: 2000,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
     mouseDrag: false,
   });
   
+
 });

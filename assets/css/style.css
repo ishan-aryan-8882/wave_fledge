@@ -369,6 +369,7 @@ img.dark-page {
   align-items: center;
   min-height: 67px;
   margin-bottom: 0;
+  transition: all 1s;
 }
 
 .up-going-animated {
@@ -384,12 +385,13 @@ img.dark-page {
 }
 
 .slider-below-show .fadeOut {
-  animation: fic 1s ease-in-out;
+  animation: fadeOutCustom 1s ease-in-out;
 }
 
 .slider-below-show .fadeIn {
-  animation: foc 1s ease-in-out;
+  animation: fadeInCustom 1s ease-in-out;
 }
+
 /* animations */
 
 @keyframes updown-bounce {
@@ -402,8 +404,11 @@ img.dark-page {
   }
 }
 
-@keyframes foc {
+@keyframes fadeOutCustom {
   0% {
+    opacity: 1;
+  }
+  99% {
     opacity: 1;
   }
   100% {
@@ -411,8 +416,11 @@ img.dark-page {
   }
 }
 
-@keyframes fic {
+@keyframes fadeInCustom {
   0% {
+    opacity: 0;
+  }
+  99%{
     opacity: 0;
   }
   100% {
