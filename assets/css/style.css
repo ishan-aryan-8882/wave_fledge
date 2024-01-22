@@ -257,6 +257,7 @@ img.dark-page {
   background: rgba(42, 42, 42, 0.823);
   border-radius: 40px;
   top: 0%;
+  left: 0;
   z-index: 1;
   height: 100%;
 }
@@ -267,11 +268,17 @@ img.dark-page {
   overflow: hidden;
   border-radius: 40px;
   /* border: 1px solid rgb(0, 255, 30); */
+  position: relative;
+}
+
+.home-page-carousel {
+  width: 100% !important;
 }
 
 .home-page-carousel .home-video-carousel {
   /* border: 1px solid rgb(255, 255, 255); */
   position: relative;
+  width: 100% !important;
 }
 
 .home-carousel-absolute-text-box {
@@ -376,7 +383,7 @@ img.dark-page {
   height: 4px;
   width: 15px;
   border-radius: 10px;
-  left: 49.5%;
+  left: 49%;
   animation: updown-bounce 2s infinite;
 }
 
@@ -393,7 +400,7 @@ img.dark-page {
 @keyframes updown-bounce {
   0%,
   100% {
-    transform: translateY(-40px);
+    transform: translateY(-45px);
   }
   50% {
     transform: translateY(0px);
