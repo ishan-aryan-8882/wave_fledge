@@ -573,6 +573,15 @@ img.dark-page {
   .slider-below-show-bg img {
     top: 155%;
   }
+  .main-navigation {  
+    left: 12px;
+    right: 100%;
+    padding: 5px;
+  }
+  .main-navigation li a{
+    padding: 10px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 465px) {
