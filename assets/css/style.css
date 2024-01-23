@@ -49,6 +49,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Nohemi-SemiBold"; */
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -62,6 +63,10 @@ li {
 
 a {
   text-decoration: none !important;
+}
+
+.border-bottom-custom{
+  border-bottom:1px solid rgba(128, 128, 128, 0.208);
 }
 
 .gray-text-custom {
@@ -434,8 +439,8 @@ img.dark-page {
 }
 
 .arrow-progress-tracker {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   /* background: #df7e36; */
   border-radius: 50%;
   position: fixed;
@@ -450,8 +455,8 @@ img.dark-page {
 .arrow-progress-tracker .fa-solid.fa-arrow-up {
   color: #df7e36;
   background: var(--bgColor);
-  width: 52.5px;
-  height: 52.5px;
+  width: 36px;
+  height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
