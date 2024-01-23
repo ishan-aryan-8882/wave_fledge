@@ -136,9 +136,9 @@ $(document).ready(function () {
   function borderHeader(){
   let homeCarousel = $('.home-page-carousel');
   let homeCarouselRect1 = homeCarousel[0].getBoundingClientRect()
-  // console.log(homeCarouselRect1.bottom);
+  // console.log(homeCarouselRect1.top);
   // 872
-  if(homeCarouselRect1.bottom<850){
+  if(homeCarouselRect1.top < 0){
     $('.sticky-header').addClass('border-bottom-custom')
     gsap.from('.arrow-progress-tracker',{
       scale:1,
