@@ -472,7 +472,7 @@ img.dark-page {
     transform: translateY(0px);
   }
   65% {
-    transform: translateY(-45px);
+    transform: translateY(-40px);
   }
 }
 
