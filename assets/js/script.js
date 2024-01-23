@@ -82,6 +82,6 @@ $(document).ready(function () {
     mouseDrag: false,
   });
   
-
+  //page progress bar
   
 });
