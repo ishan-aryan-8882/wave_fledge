@@ -30,8 +30,6 @@ $(document).ready(function () {
       $(".slider-below-show-bg").addClass("invert-color");
       $(".main-navigation").addClass("white-bg");
       $(".main-navigation ul li a").addClass("gray-text-custom");
-
-
     } else {
       $("body").addClass("dark-theme-page");
       $("body").removeClass("light-theme-page");
@@ -81,7 +79,19 @@ $(document).ready(function () {
     animateIn: "fadeIn",
     mouseDrag: false,
   });
-  
+
   //page progress bar
-  
+  let scrollPercentage = () => {
+    let scrollProgress = $(".arrow-progress-tracker");
+    let pos = $(window).scrollTop();
+    let calcHeight = $(document).outerHeight() - $(window).outerHeight();
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    scrollProgress.css('background', `conic-gradient(#df7e36 ${scrollValue}%,var(--bgColor)  ${scrollValue}%)`);
+  };
+  scrollPercentage();
+
+  $(window).scroll(function() {
+    scrollPercentage();
+  });
+
 });

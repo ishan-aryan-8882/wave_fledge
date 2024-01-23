@@ -436,7 +436,7 @@ img.dark-page {
 .arrow-progress-tracker {
   height: 60px;
   width: 60px;
-  background: #df7e36;
+  /* background: #df7e36; */
   border-radius: 50%;
   position: fixed;
   bottom: 30px;
