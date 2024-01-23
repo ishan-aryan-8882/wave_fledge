@@ -463,27 +463,28 @@ img.dark-page {
   border-radius: 50%;
 }
 
-.random-about{
+.random-about {
   margin-bottom: 500px;
-  border: 2px solid;
   overflow: hidden;
   padding-bottom: 30px;
 }
 
-.about-hs h3{
-  color:  #2A2A2C;
+.about-hs h3 {
+  color: #ffffff;
   font-size: 48px;
   letter-spacing: 0.8px;
   font-family: "Nohemi-Regular";
+  transition: all 2s;
+  transition-delay: 0.2s;
 }
 
 .about-hs h3:last-of-type {
   margin-bottom: 50px;
 }
 
-.about-hs a{
-  color:  var(--bgColor);
-  background-color: #FFFFFF;
+.about-hs a {
+  color: var(--bgColor);
+  background-color: #ffffff;
   font-family: "Nohemi-Medium";
   letter-spacing: 1.5px;
   padding: 25px 40px 25px;
@@ -493,7 +494,7 @@ img.dark-page {
   border: 1px solid transparent;
 }
 
-.about-hs a:hover{
+.about-hs a:hover {
   color: white;
   background: var(--bgColor);
   border: 1px solid white;
@@ -647,4 +648,9 @@ img.dark-page {
   .slider-below-show-bg img {
     top: 180%;
   }
+}
+
+.wow.fadeInUp.animated {
+  color: #2a2a2c !important;
+  transition: all 1s;
 }

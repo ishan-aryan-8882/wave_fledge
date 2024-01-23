@@ -1,4 +1,9 @@
 $(document).ready(function () {
+
+  //wow js init
+  new WOW().init();
+
+  //header language selection
   if ($(".sticky-header").length) {
     // language selector
     $(".dropdown-item").on("click", function () {
@@ -158,7 +163,7 @@ $(document).ready(function () {
   });
   //------------end----------------
 
-  
+
 });
 
 
