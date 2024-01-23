@@ -465,10 +465,13 @@ img.dark-page {
 
 .random-about{
   margin-bottom: 500px;
+  border: 2px solid;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .about-hs h3{
-  color: white;
+  color:  #2A2A2C;
   font-size: 48px;
   letter-spacing: 0.8px;
   font-family: "Nohemi-Regular";
@@ -486,6 +489,14 @@ img.dark-page {
   padding: 25px 40px 25px;
   border-radius: 20px;
   font-size: 14px;
+  transition: all 400ms;
+  border: 1px solid transparent;
+}
+
+.about-hs a:hover{
+  color: white;
+  background: var(--bgColor);
+  border: 1px solid white;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/

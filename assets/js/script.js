@@ -133,25 +133,50 @@ $(document).ready(function () {
   //------------end----------------
 
   // sticky nav top border and scroll progress visiblity
-  function borderHeader(){
-  let homeCarousel = $('.home-page-carousel');
-  let homeCarouselRect1 = homeCarousel[0].getBoundingClientRect()
-  // console.log(homeCarouselRect1.top);
-  // 872
-  if(homeCarouselRect1.top < 0){
-    $('.sticky-header').addClass('border-bottom-custom')
-    gsap.from('.arrow-progress-tracker',{
-      scale:1,
-      opcity:2,
-  })
-  }
-  else{
-    $('.sticky-header').removeClass('border-bottom-custom')
-    gsap.to('.arrow-progress-tracker',{
-      scale:0,
-      opcity:0,
-  })
-  }
+  function borderHeader() {
+    let homeCarousel = $(".home-page-carousel");
+    let homeCarouselRect1 = homeCarousel[0].getBoundingClientRect();
+    // console.log(homeCarouselRect1.top);
+    // 872
+    if (homeCarouselRect1.top < 0) {
+      $(".sticky-header").addClass("border-bottom-custom");
+      gsap.from(".arrow-progress-tracker", {
+        scale: 1,
+        opcity: 1,
+      });
+      gsap.from(".about-hs ", {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut",
+      });
+      gsap.from(".about-hs h3", {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut",
+        stagger: 0.1,
+      });
+    } else {
+      $(".sticky-header").removeClass("border-bottom-custom");
+      gsap.to(".arrow-progress-tracker", {
+        scale: 0,
+        opcity: 0,
+      });
+      gsap.to(".about-hs ", {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+      });
+      gsap.to(".about-hs h3", {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+        stagger: 0.1,
+      });
+    }
   }
   borderHeader();
   $(window).scroll(function () {
@@ -159,4 +184,27 @@ $(document).ready(function () {
   });
   //------------end----------------
 
+  //about-para
+  // gsap.from(".about-hs ", {
+  //   y: 100,
+  //   opacity: 0,
+  //   duration: 1,
+  //   ease: "power2.inOut",
+  // });
+  // gsap.from(".about-hs h3", {
+  //   y: 100,
+  //   opacity: 0,
+  //   duration: 1,
+  //   ease: "power2.inOut",
+  //   stagger: 0.1,
+  // });
+  // let aboutHs = $(".about-hs");
+  // let aboutHsRect1 = aboutHs[0].getBoundingClientRect();
+  // $(window).scroll(function () {
+  //   console.log(aboutHsRect1.top);
+  // });
+
+
 });
+
+
