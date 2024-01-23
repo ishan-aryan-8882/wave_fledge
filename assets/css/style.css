@@ -463,6 +463,31 @@ img.dark-page {
   border-radius: 50%;
 }
 
+.random-about{
+  margin-bottom: 500px;
+}
+
+.about-hs h3{
+  color: white;
+  font-size: 48px;
+  letter-spacing: 0.8px;
+  font-family: "Nohemi-Regular";
+}
+
+.about-hs h3:last-of-type {
+  margin-bottom: 50px;
+}
+
+.about-hs a{
+  color:  var(--bgColor);
+  background-color: #FFFFFF;
+  font-family: "Nohemi-Medium";
+  letter-spacing: 1.5px;
+  padding: 25px 40px 25px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
 
