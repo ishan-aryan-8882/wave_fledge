@@ -142,7 +142,7 @@ $(document).ready(function () {
     $('.sticky-header').addClass('border-bottom-custom')
     gsap.from('.arrow-progress-tracker',{
       scale:1,
-      opcity:1,
+      opcity:2,
   })
   }
   else{
