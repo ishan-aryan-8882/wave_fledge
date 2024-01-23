@@ -98,7 +98,6 @@ $(document).ready(function () {
   setTimeout(function () {
     $(".home-video-carousel").trigger("stop.owl.autoplay");
   }, 3000);
-
   //------------end----------------
 
   //custom shape below slider text animation
@@ -114,6 +113,7 @@ $(document).ready(function () {
     animateIn: "fadeIn",
     mouseDrag: false,
   });
+  //------------end----------------
 
   //page progress bar
   let scrollPercentage = () => {
@@ -132,8 +132,7 @@ $(document).ready(function () {
   });
   //------------end----------------
 
-
-  // sticky nav top border
+  // sticky nav top border and scroll progress visiblity
   function borderHeader(){
   let homeCarousel = $('.home-page-carousel');
   let homeCarouselRect1 = homeCarousel[0].getBoundingClientRect()
@@ -158,4 +157,6 @@ $(document).ready(function () {
   $(window).scroll(function () {
     borderHeader();
   });
+  //------------end----------------
+
 });
