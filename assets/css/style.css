@@ -444,20 +444,21 @@ img.dark-page {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .arrow-progress-tracker .fa-solid.fa-arrow-up {
   color: #df7e36;
-  z-index: 9;
   background: var(--bgColor);
-  width: 58px;
-  height: 58px;
+  width: 52.5px;
+  height: 52.5px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
 
 @keyframes updown-bounce {
@@ -497,6 +498,7 @@ img.dark-page {
   }
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
 /* media queries */
 @media (max-width: 1400px) {
 }

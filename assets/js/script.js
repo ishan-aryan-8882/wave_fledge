@@ -14,7 +14,6 @@ $(document).ready(function () {
     $(".dark-light-mode img").not($(this)).removeClass("dn-class");
     $(this).addClass("dn-class");
 
-    // Check if the clicked image has the class 'light-page'
     if ($(this).hasClass("light-page")) {
       $("body").addClass("light-theme-page");
       $("body").removeClass("dark-theme-page");
@@ -30,7 +29,21 @@ $(document).ready(function () {
       $(".slider-below-show-bg").addClass("invert-color");
       $(".main-navigation").addClass("white-bg");
       $(".main-navigation ul li a").addClass("gray-text-custom");
-    } else {
+      $(".arrow-progress-tracker .fa-solid.fa-arrow-up").addClass(
+        "light-theme-page"
+      );
+      //page progress bar
+      let scrollPercentage = () => {
+        let scrollProgress = $(".arrow-progress-tracker");
+        let pos = $(window).scrollTop();
+        let calcHeight = $(document).outerHeight() - $(window).outerHeight();
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        scrollProgress.css(
+          "background",
+          `conic-gradient(#df7e36 ${scrollValue}%,#808080 ${scrollValue}%)`
+        );
+      };
+    } else {s
       $("body").addClass("dark-theme-page");
       $("body").removeClass("light-theme-page");
       $(".click-shy h6 a").removeClass("text-secondary");
@@ -86,12 +99,14 @@ $(document).ready(function () {
     let pos = $(window).scrollTop();
     let calcHeight = $(document).outerHeight() - $(window).outerHeight();
     let scrollValue = Math.round((pos * 100) / calcHeight);
-    scrollProgress.css('background', `conic-gradient(#df7e36 ${scrollValue}%,var(--bgColor)  ${scrollValue}%)`);
+    scrollProgress.css(
+      "background",
+      `conic-gradient(#df7e36 ${scrollValue}%,var(--bgColor)  ${scrollValue}%)`
+    );
   };
   scrollPercentage();
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     scrollPercentage();
   });
-
 });
