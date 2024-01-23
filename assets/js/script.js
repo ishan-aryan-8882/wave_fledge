@@ -144,37 +144,11 @@ $(document).ready(function () {
         scale: 1,
         opcity: 1,
       });
-      gsap.from(".about-hs ", {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        ease: "power2.inOut",
-      });
-      gsap.from(".about-hs h3", {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        ease: "power2.inOut",
-        stagger: 0.1,
-      });
-    } else {
+    }else {
       $(".sticky-header").removeClass("border-bottom-custom");
       gsap.to(".arrow-progress-tracker", {
         scale: 0,
         opcity: 0,
-      });
-      gsap.to(".about-hs ", {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power2.inOut",
-      });
-      gsap.to(".about-hs h3", {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power2.inOut",
-        stagger: 0.1,
       });
     }
   }
@@ -184,27 +158,7 @@ $(document).ready(function () {
   });
   //------------end----------------
 
-  //about-para
-  // gsap.from(".about-hs ", {
-  //   y: 100,
-  //   opacity: 0,
-  //   duration: 1,
-  //   ease: "power2.inOut",
-  // });
-  // gsap.from(".about-hs h3", {
-  //   y: 100,
-  //   opacity: 0,
-  //   duration: 1,
-  //   ease: "power2.inOut",
-  //   stagger: 0.1,
-  // });
-  // let aboutHs = $(".about-hs");
-  // let aboutHsRect1 = aboutHs[0].getBoundingClientRect();
-  // $(window).scroll(function () {
-  //   console.log(aboutHsRect1.top);
-  // });
-
-
+  
 });
 
 
