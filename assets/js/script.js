@@ -138,7 +138,7 @@ $(document).ready(function () {
   let homeCarouselRect1 = homeCarousel[0].getBoundingClientRect()
   // console.log(homeCarouselRect1.bottom);
   // 872
-  if(homeCarouselRect1.bottom<872){
+  if(homeCarouselRect1.bottom<850){
     $('.sticky-header').addClass('border-bottom-custom')
     gsap.from('.arrow-progress-tracker',{
       scale:1,
