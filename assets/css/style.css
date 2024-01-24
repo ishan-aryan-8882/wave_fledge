@@ -615,6 +615,13 @@ img.dark-page {
   }
 }
 
+@media (max-width: 576px){
+  .about-hs h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 500px) {
   .main-navigation li a:not(.active-main-nav) {
     display: none;
@@ -669,5 +676,9 @@ img.dark-page {
 @media (max-width: 459px) {
   .slider-below-show-bg img {
     top: 180%;
+  }
+  .about-hs h3{
+    font-size: 25px;
+    margin-bottom: 10px;
   }
 }
