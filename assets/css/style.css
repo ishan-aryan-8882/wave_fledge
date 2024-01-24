@@ -639,6 +639,11 @@ img.dark-page {
   transition: all 0.5s;
 }
 
+.hp-cards .custom-cards:hover .custom-cards-bottom p{
+  color: white;
+  transition: all 1s;
+}
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
 
