@@ -474,8 +474,11 @@ img.dark-page {
   font-size: 48px;
   letter-spacing: 0.8px;
   font-family: "Nohemi-Regular";
-  transition: all 2s;
-  transition-delay: 0.2s;
+  transition: all 1s;
+}
+
+.light-theme-page .about-hs h3 {
+  color:  #717171 !important;
 }
 
 .about-hs h3:last-of-type {
@@ -494,10 +497,29 @@ img.dark-page {
   border: 1px solid transparent;
 }
 
+.light-theme-page .about-hs a {
+  color:  #717171;
+  border: 1px solid  #717171;
+}
+
+.light-theme-page .about-hs a:hover {
+  color:  #ffffff;
+  border: 1px solid  #717171;
+  background: #717171;
+}
+
 .about-hs a:hover {
   color: white;
   background: var(--bgColor);
   border: 1px solid white;
+}
+
+.wow.fadeInUp.animated {
+  color: #2a2a2c !important;
+}
+
+.light-theme-page .wow.fadeInUp.animated {
+  color: rgb(184, 184, 184) !important;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -648,9 +670,4 @@ img.dark-page {
   .slider-below-show-bg img {
     top: 180%;
   }
-}
-
-.wow.fadeInUp.animated {
-  color: #2a2a2c !important;
-  transition: all 1s;
 }
