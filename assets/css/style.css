@@ -464,9 +464,9 @@ img.dark-page {
 }
 
 .random-about {
-  margin-bottom: 500px;
   overflow: hidden;
   padding-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .about-hs h3 {
@@ -478,7 +478,7 @@ img.dark-page {
 }
 
 .light-theme-page .about-hs h3 {
-  color:  #717171 !important;
+  color: #717171 !important;
 }
 
 .about-hs h3:last-of-type {
@@ -498,13 +498,13 @@ img.dark-page {
 }
 
 .light-theme-page .about-hs a {
-  color:  #717171;
-  border: 1px solid  #717171;
+  color: #717171;
+  border: 1px solid #717171;
 }
 
 .light-theme-page .about-hs a:hover {
-  color:  #ffffff;
-  border: 1px solid  #717171;
+  color: #ffffff;
+  border: 1px solid #717171;
   background: #717171;
 }
 
@@ -520,6 +520,79 @@ img.dark-page {
 
 .light-theme-page .wow.fadeInUp.animated {
   color: rgb(184, 184, 184) !important;
+}
+
+.hp-cards {
+  margin-bottom: 500px;
+}
+
+.hp-cards .custom-cards {
+  position: relative;
+  background: #242425;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  max-width: 460px;
+  min-height: 562px;
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.custom-cards-top,
+.custom-cards-bottom {
+  display: flex;
+}
+
+.custom-cards-top p {
+  color: gray;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  font-family: "Nohemi-Regular";
+}
+
+.custom-cards-top img{
+  height: 28px;
+  width: 20px;
+}
+
+.custom-cards-bottom h2,
+.custom-cards-bottom p,
+.custom-cards-bottom h2 span {
+  color: gray;
+}
+
+.custom-cards-bottom h2 span, .custom-cards-bottom h2{
+  font-size: 72px;
+  letter-spacing: 0.8px;
+  font-family: "Nohemi-Medium";
+}
+
+.custom-cards-bottom h2{
+  margin-bottom: 0px;
+}
+
+.custom-cards-bottom p{
+  font-family: "Nohemi-SemiBold";
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 1.6px;
+  margin-bottom: 0;
+}
+
+.custom-cards-top {
+  justify-content: space-between;
+  align-content: inherit;
+}
+
+.custom-cards-bottom {
+  flex-direction: column;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -615,8 +688,8 @@ img.dark-page {
   }
 }
 
-@media (max-width: 576px){
-  .about-hs h3{
+@media (max-width: 576px) {
+  .about-hs h3 {
     font-size: 30px;
     margin-bottom: 10px;
   }
@@ -677,7 +750,7 @@ img.dark-page {
   .slider-below-show-bg img {
     top: 180%;
   }
-  .about-hs h3{
+  .about-hs h3 {
     font-size: 25px;
     margin-bottom: 10px;
   }
