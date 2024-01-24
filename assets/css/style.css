@@ -557,7 +557,7 @@ img.dark-page {
   font-family: "Nohemi-Regular";
 }
 
-.custom-cards-top img{
+.custom-cards-top img {
   height: 28px;
   width: 20px;
 }
@@ -568,17 +568,18 @@ img.dark-page {
   color: gray;
 }
 
-.custom-cards-bottom h2 span, .custom-cards-bottom h2{
+.custom-cards-bottom h2 span,
+.custom-cards-bottom h2 {
   font-size: 72px;
   letter-spacing: 0.8px;
   font-family: "Nohemi-Medium";
 }
 
-.custom-cards-bottom h2{
+.custom-cards-bottom h2 {
   margin-bottom: 0px;
 }
 
-.custom-cards-bottom p{
+.custom-cards-bottom p {
   font-family: "Nohemi-SemiBold";
   font-size: 16px;
   line-height: 22.4px;
@@ -593,6 +594,49 @@ img.dark-page {
 
 .custom-cards-bottom {
   flex-direction: column;
+}
+
+.col-xl-3.col-lg-5.col-md-6.col-12.d-flex.justify-content-center.second-custom-card:hover
+  .cct-img_contianer
+  img:first-of-type {
+  /* display: none !important; */
+  animation: sandouter 1s infinite;
+}
+
+.cct-img_contianer {
+  /* border: 2px solid white; */
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+}
+/* 
+.cct-img_contianer img {
+
+} */
+
+.cct-img_contianer img:last-of-type {
+  position: absolute;
+  width: 10px;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+}
+
+.col-xl-3.col-lg-5.col-md-6.col-12.d-flex.justify-content-center.second-custom-card:hover
+  .cct-img_contianer
+  img:last-of-type {
+  animation: sandinner 1s infinite;
+}
+
+.hp-cards .no-rotate .custom-cards:hover .custom-cards-top img {
+  /* display: none !important; */
+  animation: wobble 0.7s infinite linear;
+}
+
+.hp-cards .custom-cards:hover .custom-cards-bottom h2, .hp-cards .custom-cards:hover .custom-cards-bottom h2 span{
+  /* display: none !important; */
+  color:  #DF7E36;
+  transition: all 0.5s;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -631,6 +675,25 @@ img.dark-page {
     opacity: 1;
   }
 }
+
+@keyframes sandouter {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes sandinner {
+  0% {
+    transform: translateX(-50%) rotateX(180deg) translateY(10px);
+  }
+  100% {
+    transform: translateX(-50%) rotateX(0deg) translateY(0px);
+  }
+}
+
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
 /* media queries */
