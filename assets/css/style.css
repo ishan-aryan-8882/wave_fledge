@@ -555,6 +555,7 @@ img.dark-page {
   line-height: 22px;
   letter-spacing: 0.8px;
   font-family: "Nohemi-Regular";
+  margin-bottom: 0;
 }
 
 .custom-cards-top img {
@@ -770,6 +771,24 @@ background: radial-gradient(50% 50% at 50% 50%, #FFE0C4 74.77%, #FFE8D3 100%), r
   .slider-below-show-bg img {
     top: 160%;
   }
+  .custom-cards-top p {
+    font-size: 13px;
+  }
+  .custom-cards-bottom h2{
+    font-size: 63px;
+  }
+  .custom-cards-bottom h2 span{
+    font-size: 63px;
+  }
+  .custom-cards-bottom p{
+    font-size: 15px;
+  }
+  .bulb-wrapper .custom-cards-bottom p{
+    font-size: 14px;
+  }
+  .bulb-wrapper .custom-cards-bottom span{
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -782,6 +801,9 @@ background: radial-gradient(50% 50% at 50% 50%, #FFE0C4 74.77%, #FFE8D3 100%), r
   }
   .slider-below-show-bg img {
     top: 120%;
+  }
+  .custom-cards-top p {
+    font-size: 12px;
   }
 }
 
@@ -872,5 +894,8 @@ background: radial-gradient(50% 50% at 50% 50%, #FFE0C4 74.77%, #FFE8D3 100%), r
   .about-hs h3 {
     font-size: 25px;
     margin-bottom: 10px;
+  }
+  .hp-cards .custom-cards{
+    min-height: 330px !important;
   }
 }
