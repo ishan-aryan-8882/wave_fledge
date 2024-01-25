@@ -544,6 +544,10 @@ img.dark-page {
   margin-bottom: 20px;
 }
 
+.light-theme-page .hp-cards .custom-cards{
+  background: white;
+}
+
 .custom-cards-top,
 .custom-cards-bottom {
   display: flex;
@@ -614,7 +618,7 @@ img.dark-page {
   position: absolute;
   width: 10px;
   left: 50%;
-  top: 15%;
+  top: 20%;
   transform: translateX(-50%);
 }
 
@@ -636,6 +640,11 @@ img.dark-page {
 .hp-cards .custom-cards:hover .custom-cards-bottom p {
   color: white;
   transition: all 1s;
+  /* color: rgb(76, 76, 76); */
+}
+
+.light-theme-page .hp-cards .custom-cards:hover .custom-cards-bottom p {
+  color: rgb(76, 76, 76);
 }
 
 .bulb-wrapper .custom-cards-bottom {
@@ -649,9 +658,26 @@ img.dark-page {
 }
 
 .bulb-wrapper:hover .custom-cards-bottom{
-  color: white;
   transform: translateY(-16px);
 }
+
+.bulb-wrapper:hover .custom-cards-bottom span{
+  color: white;
+}
+
+.bulb-wrapper:hover .custom-cards-bottom p{
+  color: white;
+  /* transform: translateY(-16px); */
+}
+
+.light-theme-page .bulb-wrapper:hover .custom-cards-bottom span{
+  color: rgb(76, 76, 76);
+}
+
+.light-theme-page .bulb-wrapper:hover .custom-cards-bottom p{
+  color: rgb(76, 76, 76);
+}
+
 
 span.circle{
   position: absolute;
@@ -668,16 +694,33 @@ span.circle{
   background: #48484E;
   z-index: 2;
 }
+.light-theme-page .circle_top{
+  width: 42px;
+  height: 42px;
+  background: #bdbdc1;
+  z-index: 2;
+}
 .circle_center{
   width: 280px;
   height: 280px;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 41.71%, rgba(255, 255, 255, 0.05) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 41.71%, rgba(255, 255, 255, 0.05) 100%);
+  z-index: 1;
+}
+.light-theme-page .circle_center{
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.13) 41.71%, rgba(255, 255, 255, 0.661) 100%);
   z-index: 1;
 }
 .circle_bottom{
   width: 476px;
   height: 476px;
   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 62.5%, rgba(255, 255, 255, 0.02) 100%);
+}
+.light-theme-page .circle_bottom{
+  width: 476px;
+  height: 476px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(148, 147, 147, 0.245) 62.5%, rgba(0, 0, 0, 0.02) 100%);
 }
 
 .bulb-wrapper:hover .circle_top{
