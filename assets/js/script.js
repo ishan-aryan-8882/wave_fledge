@@ -163,5 +163,26 @@ $(document).ready(function () {
   });
   //------------end----------------
 
+  //custom card counter
+  function startCounter(targetNumber,counterElement){
+    let count = 0;
+    function updateCounter(){
+      let randomIncrement = Math.floor(Math.random()*10)+1;
+      count += randomIncrement;
+      $(counterElement).text(count);
+
+      if(count >= targetNumber){
+        clearInterval(counterInterval);
+      }
+    }
+    var counterInterval = setInterval(updateCounter, 50)
+  }
+  
+  let counterElements = $('#counter-cc');
+  counterElements.each(function(){
+    let targetNumber = $(this).data('target');
+    startCounter(targetNumber,this);
+  });
+  //------------end----------------
 
 });
