@@ -637,20 +637,6 @@ img.dark-page {
   transition: all 1s;
 }
 
-.custom-cards.light-bulb {
-  width: 280px;
-  min-width: 250px;
-  transition: 0.5s;
-}
-
-/* .d-flex{
-  padding-left: 0 !important;
-}
-
-.bulb-wrapper{
-  padding-left: 15px !important;
-} */
-
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
 
@@ -724,9 +710,6 @@ img.dark-page {
   }
   .slider-below-show-bg img {
     top: 160%;
-  }
-  .d-flex {
-    padding-left: 0 !important;
   }
 }
 
