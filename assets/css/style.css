@@ -977,6 +977,12 @@ color: var(--hoverGold);}
   }
 }
 
+@media (max-width: 992px){
+  .project-text-box h5 br{
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .sticky-header .click-shy {
     display: none;
