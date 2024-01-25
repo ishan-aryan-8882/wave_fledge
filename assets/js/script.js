@@ -203,14 +203,13 @@ $(document).ready(function () {
     // Observe the target element
     observer.observe(counterElement);
   }
-  
   let counterElements = $('.counter-cc');
   counterElements.each(function () {
     let targetNumber = $(this).data('target');
     startCounter(targetNumber, this);
   });
-  
-  
   //------------end----------------
+
+  
 
 });

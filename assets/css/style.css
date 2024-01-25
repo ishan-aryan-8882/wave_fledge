@@ -523,7 +523,7 @@ img.dark-page {
 }
 
 .hp-cards {
-  margin-bottom: 500px;
+  margin-bottom: 80px;
 }
 
 .hp-cards .custom-cards {
@@ -737,7 +737,11 @@ background: radial-gradient(50% 50% at 50% 50%, #FFE0C4 74.77%, #FFE8D3 100%), r
   box-shadow: 0px 0px 60px #E99B53;
 }
 
-
+.hr-body{
+  background: rgba(128, 128, 128, 0.127);
+  padding: 1px;
+  margin-bottom: 800px;
+}
 
 
 /*////////////////////////////////////////////////*/
