@@ -164,25 +164,30 @@ $(document).ready(function () {
   //------------end----------------
 
   //custom card counter
-  function startCounter(targetNumber,counterElement){
+  function startCounter(targetNumber, counterElement) {
     let count = 0;
-    function updateCounter(){
-      let randomIncrement = Math.floor(Math.random()*10)+1;
+  
+    function updateCounter() {
+      let remainingDifference = targetNumber - count;
+      let randomIncrement = Math.min(Math.floor(Math.random() * 10) + 1, remainingDifference);
+  
       count += randomIncrement;
       $(counterElement).text(count);
-
-      if(count >= targetNumber){
+  
+      if (count >= targetNumber) {
         clearInterval(counterInterval);
       }
     }
-    var counterInterval = setInterval(updateCounter, 50)
+  
+    var counterInterval = setInterval(updateCounter, 10);
   }
   
-  let counterElements = $('#counter-cc');
-  counterElements.each(function(){
+  let counterElements = $('.counter-cc');
+  counterElements.each(function () {
     let targetNumber = $(this).data('target');
-    startCounter(targetNumber,this);
+    startCounter(targetNumber, this);
   });
+  
   //------------end----------------
 
 });
