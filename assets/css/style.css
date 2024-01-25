@@ -474,7 +474,7 @@ img.dark-page {
   font-size: 48px;
   letter-spacing: 0.8px;
   font-family: "Nohemi-Regular";
-  transition: all 1s;
+  transition: 2s;
 }
 
 .light-theme-page .about-hs h3 {
@@ -622,7 +622,7 @@ img.dark-page {
 }
 
 .hp-cards .no-rotate .custom-cards:hover .custom-cards-top img {
-  animation: wobble 0.7s infinite linear;
+  animation: wobble 0.7s infinite;
 }
 
 .hp-cards .custom-cards:hover .custom-cards-bottom h2,
@@ -637,7 +637,66 @@ img.dark-page {
   transition: all 1s;
 }
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+.bulb-wrapper .custom-cards-bottom {
+  color: gray;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.bulb-wrapper:hover .custom-cards-bottom{
+  color: white;
+  transform: translateY(-16px);
+}
+
+span.circle{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.circle_top{
+  width: 42px;
+  height: 42px;
+  background: #48484E;
+  z-index: 2;
+}
+.circle_center{
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 41.71%, rgba(255, 255, 255, 0.05) 100%);
+  z-index: 1;
+}
+.circle_bottom{
+  width: 476px;
+  height: 476px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 62.5%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.bulb-wrapper:hover .circle_top{
+background: white
+}
+
+.bulb-wrapper:hover .circle_center{
+background: radial-gradient(50% 50% at 50% 50%, #FFE0C4 74.77%, #FFE8D3 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 41.71%, rgba(255, 255, 255, 0.05) 100%);
+  box-shadow: 0px 0px 40px #E99B53;
+}
+
+.bulb-wrapper:hover .circle_bottom{
+  background: radial-gradient(50% 50% at 50% 50%, #FFD1A8 73.41%, #F9DFC3 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 62.5%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow: 0px 0px 60px #E99B53;
+}
+
+
+
+
+/*////////////////////////////////////////////////*/
 /* animations */
 
 @keyframes updown-bounce {
@@ -692,7 +751,7 @@ img.dark-page {
   }
 }
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////*/
 /* media queries */
 @media (max-width: 1400px) {
 }
