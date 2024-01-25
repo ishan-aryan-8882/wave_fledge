@@ -566,6 +566,7 @@ img.dark-page {
 .custom-cards-bottom p,
 .custom-cards-bottom h2 span {
   color: gray;
+  transition: all 0.3s;
 }
 
 .custom-cards-bottom h2 span,
@@ -596,9 +597,7 @@ img.dark-page {
   flex-direction: column;
 }
 
-.col-xl-3.col-lg-5.col-md-6.col-12.d-flex.justify-content-center.second-custom-card:hover
-  .cct-img_contianer
-  img:first-of-type {
+.second-custom-card:hover .cct-img_contianer img:first-of-type {
   /* display: none !important; */
   animation: sandouter 1s infinite;
 }
@@ -609,10 +608,6 @@ img.dark-page {
   overflow: hidden;
   padding: 0 20px;
 }
-/* 
-.cct-img_contianer img {
-
-} */
 
 .cct-img_contianer img:last-of-type {
   position: absolute;
@@ -622,27 +617,39 @@ img.dark-page {
   transform: translateX(-50%);
 }
 
-.col-xl-3.col-lg-5.col-md-6.col-12.d-flex.justify-content-center.second-custom-card:hover
-  .cct-img_contianer
-  img:last-of-type {
+.second-custom-card:hover .cct-img_contianer img:last-of-type {
   animation: sandinner 1s infinite;
 }
 
 .hp-cards .no-rotate .custom-cards:hover .custom-cards-top img {
-  /* display: none !important; */
   animation: wobble 0.7s infinite linear;
 }
 
-.hp-cards .custom-cards:hover .custom-cards-bottom h2, .hp-cards .custom-cards:hover .custom-cards-bottom h2 span{
+.hp-cards .custom-cards:hover .custom-cards-bottom h2,
+.hp-cards .custom-cards:hover .custom-cards-bottom h2 span {
   /* display: none !important; */
-  color:  #DF7E36;
+  color: #df7e36;
   transition: all 0.5s;
 }
 
-.hp-cards .custom-cards:hover .custom-cards-bottom p{
+.hp-cards .custom-cards:hover .custom-cards-bottom p {
   color: white;
   transition: all 1s;
 }
+
+.custom-cards.light-bulb {
+  width: 280px;
+  min-width: 250px;
+  transition: 0.5s;
+}
+
+/* .d-flex{
+  padding-left: 0 !important;
+}
+
+.bulb-wrapper{
+  padding-left: 15px !important;
+} */
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
@@ -699,7 +706,6 @@ img.dark-page {
   }
 }
 
-
 /*/////////////////////////////////////////////////////////////////////////////////////////////*/
 /* media queries */
 @media (max-width: 1400px) {
@@ -718,6 +724,9 @@ img.dark-page {
   }
   .slider-below-show-bg img {
     top: 160%;
+  }
+  .d-flex {
+    padding-left: 0 !important;
   }
 }
 
