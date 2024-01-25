@@ -1006,6 +1006,19 @@ color: var(--hoverGold);}
   .slider-below-show-bg img {
     top: 140%;
   }
+  .project-heading a{
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    padding: 12px 27px;
+    display: flex;
+    min-width: fit-content;
+    gap: 5px;
+  }
+  .project-heading h4{
+    font-size: 27px;
+    letter-spacing: 1px;
+    margin: 0px;
+  }
 }
 
 @media (max-width: 576px) {
