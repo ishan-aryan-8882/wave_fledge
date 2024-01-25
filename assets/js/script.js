@@ -179,7 +179,7 @@ $(document).ready(function () {
       }
     }
   
-    var counterInterval = setInterval(updateCounter, 10);
+    var counterInterval = setInterval(updateCounter, 1);
   }
   
   let counterElements = $('.counter-cc');
