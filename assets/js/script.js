@@ -179,7 +179,29 @@ $(document).ready(function () {
       }
     }
   
-    var counterInterval = setInterval(updateCounter, 1);
+    var counterInterval;
+  
+    // Options for the Intersection Observer
+    const options = {
+      threshold: 0.5, // Trigger when 50% of the element is in view
+    };
+  
+    // Callback function for the Intersection Observer
+    function handleIntersection(entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Start the counter when the section is in view
+          counterInterval = setInterval(updateCounter, 1);
+          observer.disconnect(); // Disconnect the observer once started
+        }
+      });
+    }
+  
+    // Create the Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, options);
+  
+    // Observe the target element
+    observer.observe(counterElement);
   }
   
   let counterElements = $('.counter-cc');
@@ -187,6 +209,7 @@ $(document).ready(function () {
     let targetNumber = $(this).data('target');
     startCounter(targetNumber, this);
   });
+  
   
   //------------end----------------
 
