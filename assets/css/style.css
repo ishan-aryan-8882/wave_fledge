@@ -476,7 +476,7 @@ img.dark-page {
   font-size: 48px;
   letter-spacing: 0.8px;
   font-family: "Nohemi-Regular";
-  transition: 2s;
+  transition: all 5s !important;
 }
 
 .light-theme-page .about-hs h3 {
@@ -519,7 +519,7 @@ img.dark-page {
 .wow.fadeInUp.animated {
   color: #2a2a2c !important;
 }
- 
+
 .light-theme-page .wow.fadeInUp.animated {
   color: rgb(184, 184, 184) !important;
 }
@@ -871,12 +871,46 @@ span.circle {
   color: var(--hoverGold);
 }
 
-.about-service-home{
+.about-service-home {
   margin-bottom: 800px;
 }
 
-.bg-black{
-  background:   #131313;
+.about-service-home .bg-black {
+  --bs-bg-opacity: 0.3 !important;
+  border-radius: 40px;
+}
+
+.about-content_inbbg {
+  margin-top: 80px;
+}
+
+.about-content_inbbg h3 {
+  /* color: white; */
+  font-size: 48px;
+  letter-spacing: 0.8px;
+  font-family: "Nohemi-Regular";
+  line-height: 58px;
+  transition: all 10s;
+}
+
+h3.whiteColorWow {
+  color: white !important;
+  transition: all 1s ease-in-out;
+}
+
+.service-main {
+  margin: 64px 0;
+}
+
+.service-main-cont {
+  height: 20rem;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  border-radius: 25px;
+  align-items: center;
 }
 
 /*////////////////////////////////////////////////*/
