@@ -1084,7 +1084,7 @@ ul.design-layout{
   justify-content: space-between;
   min-height: 45px;
   padding-left: 0px;
-  gap: 31px;
+  /* gap: 31px; */
 }
 
 ul.design-layout li{
@@ -1106,6 +1106,18 @@ ul.design-layout li{
 .arrow-prior-box:hover{
   background: var(--hoverGold);
   color: white;
+}
+
+ul.design-layout li img{
+  position: absolute;
+  right: -60px;
+}
+
+ul.design-layout li img:nth-child(2n+1){
+  bottom: -45px;
+}
+ul.design-layout li img.uppersidemove{
+  top: -45px;
 }
 
 /*////////////////////////////////////////////////*/
