@@ -225,14 +225,11 @@ $(document).ready(function () {
   //------------end---------------
 
   //noticable clients carousel
-  $('.clients-carousel').owlCarousel({
+  $(".clients-carousel").owlCarousel({
     loop:true,
     margin:10,
     nav:false,
     dots:false,
-    autoplay:true,
-    autoplayTimeout:800,
-    autoplaySpeed: 800,
     responsive:{
         0:{
             items:1
@@ -244,14 +241,13 @@ $(document).ready(function () {
             items:7
         }
     },
-    onInitialized: function (event) {
-      smoothScroll(event.target);
-    }
-})
+    loop: true,
+    autoplay: true,
+    slideTransition: "linear",
+    autoplayTimeout: 3000,
+    autoplaySpeed: 3000,
+    autoplayHoverPause: true,
+  });
 
-
-
-
-
-
+  //--------------------------ending parenthesis-------------------------------------------------------------//
 });

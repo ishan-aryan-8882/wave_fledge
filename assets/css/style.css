@@ -1219,6 +1219,10 @@ ul.design-layout li img.uppersidemove {
   filter: grayscale(1);
 }
 
+.clients-carousel .item a img:hover{
+  filter: grayscale(0);
+}
+
 /*////////////////////////////////////////////////*/
 /* animations */
 
