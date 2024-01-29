@@ -872,7 +872,8 @@ span.circle {
 }
 
 .about-service-home {
-  margin-bottom: 800px;
+  margin-bottom: 100px;
+  position: relative;
 }
 
 .about-service-home .bg-black {
@@ -1029,6 +1030,29 @@ h2.whiteColorChild {
 .aboutService_child .heading{
   margin-bottom: 65px;
 }
+
+.support{
+  margin-bottom: 900px;
+}
+
+.support-img-button{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(0deg, #DEE4F2, #DEE4F2);
+  border-radius: 20px;
+  position: relative;
+}
+
+.support-img-button img{
+  max-width: 100%;
+  height: auto;
+  scale: 0.7;
+}
+
+.support-img-button a{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
 
 /*////////////////////////////////////////////////*/
 /* animations */
