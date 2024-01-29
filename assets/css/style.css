@@ -1061,7 +1061,7 @@ h2.whiteColorChild {
   margin-bottom: 1rem;
 }
 
-.support-content h3{
+.support-content h3 {
   font-family: "Nohemi-Medium";
   font-size: 48px;
   letter-spacing: 0.8px;
@@ -1069,7 +1069,7 @@ h2.whiteColorChild {
   color: white;
 }
 
-.support-content p{
+.support-content p {
   font-family: "Nohemi-Regular";
   font-size: 16px;
   line-height: 24px;
@@ -1077,7 +1077,7 @@ h2.whiteColorChild {
   color: gray;
 }
 
-ul.design-layout{
+ul.design-layout {
   margin-top: 65px;
   display: flex;
   align-items: center;
@@ -1087,12 +1087,11 @@ ul.design-layout{
   /* gap: 31px; */
 }
 
-ul.design-layout li{
+ul.design-layout li {
   position: relative;
 }
 
-.arrow-prior-box
-{
+.arrow-prior-box {
   font-size: 16px;
   color: black;
   background: white;
@@ -1103,24 +1102,31 @@ ul.design-layout li{
   font-family: "Nohemi-Regular";
 }
 
-.arrow-prior-box:hover{
+.arrow-prior-box:hover {
   background: var(--hoverGold);
   color: white;
 }
 
-ul.design-layout li img{
+ul.design-layout li img {
   position: absolute;
   right: -60px;
 }
 
-ul.design-layout li img:nth-child(2n+1){
+ul.design-layout li img:nth-child(2n + 1) {
   bottom: -45px;
 }
-ul.design-layout li img.uppersidemove{
+ul.design-layout li img.uppersidemove {
   top: -45px;
 }
 
-.support-inline-left{
+.support-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.support-inline-left {
   display: flex;
   padding: 2.45rem;
   justify-content: center;
@@ -1129,34 +1135,54 @@ ul.design-layout li img.uppersidemove{
   background: #242425;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   border-radius: 1.25rem;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
-.left-img-cont{
+.left-img-cont {
   width: 96px;
   height: 96px;
   min-width: 96px;
-  background: #1C1C1D;
+  background: #1c1c1d;
   border-radius: 22px;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
 
-.left-img-cont img{
+.left-img-cont img {
   height: 30px;
   width: auto;
   margin: 0 auto;
 }
 
-.support-inline-left h4{
+.support-inline-left h4 {
   color: white;
   font-family: "Nohemi-Regular";
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 0.8px;
   margin: 0 0 8px;
+}
 
+.support-inline-right button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 10px;
+  border-radius: 1.25rem;
+  background: var(--hoverGold);
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+
+}
+
+.support-inline-right button:hover {
+  background: #1c1c1d;
 }
 
 /*////////////////////////////////////////////////*/
