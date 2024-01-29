@@ -57,6 +57,7 @@
   --borderRadius: 8px;
   --lightModeText: #6c757d;
   --hoverGold: #df7e36;
+  --footerColorBg:#111112;
 }
 
 li {
@@ -1189,7 +1190,9 @@ ul.design-layout li img.uppersidemove {
 }
 
 .clients-show {
-  margin-bottom: 900px;
+  margin-bottom: 100px;
+  /* border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px; */
 }
 
 .clients-show h4 {
@@ -1219,8 +1222,26 @@ ul.design-layout li img.uppersidemove {
   filter: grayscale(1);
 }
 
-.clients-carousel .item a img:hover{
+.clients-carousel .item a img:hover {
   filter: grayscale(0);
+}
+
+footer {
+  padding: 1000px 0;
+  background: #111112;
+  position: relative;
+
+}
+
+footer::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: var(--bgColor);
+  height: 2%;
+  width: 100%;
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
 }
 
 /*////////////////////////////////////////////////*/
