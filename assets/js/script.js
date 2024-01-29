@@ -222,4 +222,36 @@ $(document).ready(function () {
     }
   });
   observer.observe($element[0]);
+  //------------end---------------
+
+  //noticable clients carousel
+  $('.clients-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:800,
+    autoplaySpeed: 800,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:7
+        }
+    },
+    onInitialized: function (event) {
+      smoothScroll(event.target);
+    }
+})
+
+
+
+
+
+
 });

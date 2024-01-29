@@ -1031,7 +1031,7 @@ h2.whiteColorChild {
 }
 
 .support {
-  margin-bottom: 900px;
+  margin-bottom: 100px;
 }
 
 .support-img-button {
@@ -1053,7 +1053,7 @@ h2.whiteColorChild {
   right: 1rem;
 }
 
-.support-img-button a:hover{
+.support-img-button a:hover {
   background: transparent;
 }
 
@@ -1182,11 +1182,41 @@ ul.design-layout li img.uppersidemove {
   text-transform: uppercase;
   color: white;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-
 }
 
 .support-inline-right button:hover {
   background: #1c1c1d;
+}
+
+.clients-show {
+  margin-bottom: 900px;
+}
+
+.clients-show h4 {
+  font-size: 36px;
+  line-height: 43.2px;
+  letter-spacing: 1.92px;
+  font-family: "Nohemi-Regular";
+  color: white;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  /* background: red; */
+  justify-content: start;
+}
+
+.clients-show h4 img {
+  margin-right: 16px;
+}
+
+.clients-show .animated-hr {
+  margin-bottom: 4rem;
+}
+
+.clients-carousel .item a img {
+  width: auto;
+  margin: 0 auto;
+  filter: grayscale(1);
 }
 
 /*////////////////////////////////////////////////*/
