@@ -1021,6 +1021,15 @@ h2.arrow-h2
   z-index: 9;
 }
 
+h2.whiteColorChild {
+  color: white;
+  transition: all 1s ease-in-out;
+}
+
+.aboutService_child .heading{
+  margin-bottom: 65px;
+}
+
 /*////////////////////////////////////////////////*/
 /* animations */
 
