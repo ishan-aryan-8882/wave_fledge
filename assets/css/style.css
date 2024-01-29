@@ -977,6 +977,16 @@ h3.whiteColorWow {
   transform: scaleX(1.11);
 }
 
+h2.arrow-h2
+{
+  color: #717171;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: 0.7px;
+  margin: 0px 0px 8px;
+  font-family: "Nohemi-Regular";
+}
+
 /*////////////////////////////////////////////////*/
 /* animations */
 
