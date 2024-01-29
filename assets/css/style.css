@@ -900,17 +900,40 @@ h3.whiteColorWow {
 
 .service-main {
   margin: 64px 0;
+  height: 20rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  overflow: hidden;
 }
 
 .service-main-cont {
-  height: 20rem;
-  background: red;
+  height: 100%;
+  background: #242425;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 4rem;
-  border-radius: 25px;
   align-items: center;
+}
+
+.service-main-cont-img-style{
+  width: 116px;
+  height: 116px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service-main-cont-img-style img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* display: none; */
+}
+
+.service-main-cont h6{
+  color: white;
+  text-transform: uppercase;
+  font-family: "Nohemi-Medium";
 }
 
 /*////////////////////////////////////////////////*/
