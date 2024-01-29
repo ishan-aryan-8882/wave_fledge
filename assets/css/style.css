@@ -878,6 +878,7 @@ span.circle {
 .about-service-home .bg-black {
   --bs-bg-opacity: 0.3 !important;
   border-radius: 40px;
+  overflow: hidden;
 }
 
 .about-content_inbbg {
@@ -896,6 +897,11 @@ span.circle {
 h3.whiteColorWow {
   color: white !important;
   transition: all 1s ease-in-out;
+}
+
+.cards-service{
+  background: red;
+  /* margin-right: 200px !important; */
 }
 
 .service-main {
@@ -927,7 +933,7 @@ h3.whiteColorWow {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* display: none; */
+  display: none;
 }
 
 .service-main-cont h6{
