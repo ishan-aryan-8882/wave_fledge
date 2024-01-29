@@ -32,6 +32,7 @@ $(document).ready(function () {
       $(".home-carousel-absolute-text-box a").addClass("gray-text-custom");
       $(".slider-below-show-bg").addClass("invert-color");
       $(".main-navigation").addClass("white-bg");
+      $(".footer-curve").addClass("white-bg");
       $(".main-navigation ul li a").addClass("gray-text-custom");
       //page progress bar
       $(".arrow-progress-tracker .fa-solid.fa-arrow-up").addClass(
@@ -65,6 +66,8 @@ $(document).ready(function () {
       $(".slider-below-show-bg").removeClass("invert-color");
       $(".main-navigation").removeClass("white-bg");
       $(".main-navigation ul li a").removeClass("gray-text-custom");
+      $(".footer-curve").removeClass("white-bg");
+
       //page progress bar
       $(".arrow-progress-tracker .fa-solid.fa-arrow-up").removeClass(
         "light-theme-page"
@@ -248,6 +251,16 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
     autoplayHoverPause: true,
   });
+  //------------end---------------
+
+
+
+
+
+
+
+
+
 
   //--------------------------ending parenthesis-------------------------------------------------------------//
 });

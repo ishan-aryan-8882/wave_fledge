@@ -48,7 +48,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 500ms;
   scroll-behavior: smooth;
 }
 
@@ -1233,15 +1232,16 @@ footer {
 
 }
 
-footer::before {
+.footer-curve {
   position: absolute;
-  content: "";
   inset: 0;
   background: var(--bgColor);
   height: 2%;
   width: 100%;
   border-bottom-left-radius: 500px;
   border-bottom-right-radius: 500px;
+  transition: none !important;
+
 }
 
 /*////////////////////////////////////////////////*/
