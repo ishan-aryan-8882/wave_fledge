@@ -774,6 +774,13 @@ span.circle {
   margin-bottom: 100px;
 }
 
+.projects img{
+  transition: 500ms !important;
+}
+.projects a{
+  transition: 500ms !important;
+}
+
 .project-heading {
   display: flex;
   justify-content: space-between;
