@@ -1078,6 +1078,13 @@ h2.arrow-h2
 
 /*////////////////////////////////////////////////*/
 /* media queries */
+
+@media (min-width: 1500px) {
+  .container.IncWidth {
+    max-width: 1480px !important;
+  }
+}
+
 @media (max-width: 1400px) {
 }
 
