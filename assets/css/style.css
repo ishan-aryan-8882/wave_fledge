@@ -56,7 +56,7 @@
   --borderRadius: 8px;
   --lightModeText: #6c757d;
   --hoverGold: #df7e36;
-  --footerColorBg:#111112;
+  --footerColorBg: #111112;
 }
 
 li {
@@ -774,10 +774,10 @@ span.circle {
   margin-bottom: 100px;
 }
 
-.projects img{
+.projects img {
   transition: 500ms !important;
 }
-.projects a{
+.projects a {
   transition: 500ms !important;
 }
 
@@ -995,12 +995,12 @@ h2.arrow-h2 {
   margin-bottom: 8px;
 }
 
-h2.arrow-h2 span{
-  color: #FF9838;
+h2.arrow-h2 span {
+  color: #ff9838;
   position: relative !important;
 }
 
-h2.arrow-h2 span img{
+h2.arrow-h2 span img {
   position: absolute;
   bottom: -45px;
   left: 0;
@@ -1265,15 +1265,15 @@ footer {
   transition: none !important;
 }
 
-.footer-logo img{
+.footer-logo img {
   height: 1.68rem;
 }
 
-.footer-logo img.icon{
+.footer-logo img.icon {
   height: 3.75rem;
 }
 
-.footer-logo a{
+.footer-logo a {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -1281,15 +1281,15 @@ footer {
   margin-bottom: 10px;
 }
 
-.footer-logo h6{
+.footer-logo h6 {
   font-size: 0.875rem;
   color: #717171;
   margin-bottom: 50px;
-  line-height: 1.2px; 
+  line-height: 1.2px;
   font-family: "Nohemi-Regular";
 }
 
-.footer-section h4{
+.footer-section h4 {
   color: white;
   font-family: "Nohemi-Medium";
   line-height: 49px;
@@ -1298,34 +1298,34 @@ footer {
   font-size: 36px;
 }
 
-.footer-section .footer-links ul{
+.footer-section .footer-links ul {
   padding: 0;
   /* display: flex;
   flex-direction: column; */
 }
 
-.footer-section .footer-links p{
+.footer-section .footer-links p {
   color: #717171;
   font-size: 14px;
   line-height: 19.6px;
   margin-bottom: 13px;
-  font-family: "Nohemi-Regular";  
+  font-family: "Nohemi-Regular";
 }
 
-.footer-section .footer-links ul li{
+.footer-section .footer-links ul li {
   margin-bottom: 10px;
 }
 
-.footer-section .footer-links ul li a{
+.footer-section .footer-links ul li a {
   font-size: 16px;
   color: white;
   line-height: 22px;
   letter-spacing: 0.7px;
-  font-family: "Nohemi-Medium";  
+  font-family: "Nohemi-Medium";
   transition: 500ms;
 }
 
-.footer-section .footer-links ul li a:hover{
+.footer-section .footer-links ul li a:hover {
   color: var(--hoverGold);
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -1393,7 +1393,7 @@ footer {
 }
 
 @media (max-width: 1401px) {
-  h2.arrow-h2{
+  h2.arrow-h2 {
     font-size: 67px;
     line-height: 72px;
   }
@@ -1404,11 +1404,11 @@ footer {
     bottom: -24.5%;
     /* border: 2px solid white; */
   }
-  .about-content_inbbg h3{
+  .about-content_inbbg h3 {
     font-size: 42px;
     line-height: 48px;
   }
-  h2.arrow-h2{
+  h2.arrow-h2 {
     font-size: 63px;
   }
 }
@@ -1460,11 +1460,11 @@ footer {
   .custom-cards-top p {
     font-size: 12px;
   }
-  .about-content_inbbg h3{
+  .about-content_inbbg h3 {
     font-size: 35px;
     line-height: 41px;
   }
-  h2.arrow-h2{
+  h2.arrow-h2 {
     font-size: 57px;
     line-height: 60px;
   }
@@ -1474,14 +1474,14 @@ footer {
   .project-text-box h5 br {
     display: none;
   }
-  h2.arrow-h2{
+  h2.arrow-h2 {
     font-size: 54px;
     line-height: 70px;
   }
-  .support-content{
+  .support-content {
     padding-left: 50px;
   }
-  .support-inline-left h4 br{
+  .support-inline-left h4 br {
     display: none;
   }
 }
@@ -1519,27 +1519,27 @@ footer {
     letter-spacing: 1px;
     margin: 0px;
   }
-  .footer-section h4{
+  .footer-section h4 {
     font-size: 30px;
     line-height: 40px;
   }
-  .support-inline{
+  .support-inline {
     flex-direction: column;
     align-items: start;
   }
-  .support-inline-right{
+  .support-inline-right {
     width: 100%;
   }
-  .support-inline-right button{
+  .support-inline-right button {
     width: 100%;
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   ul.design-layout{
-    margin-left: -85px;
+    scale: 0.7;
+    margin-left: -65px;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -1547,10 +1547,13 @@ footer {
     font-size: 30px;
     margin-bottom: 10px;
   }
-  .about-content_inbbg h3{
+  .about-content_inbbg h3 {
     font-size: 32px;
     line-height: 36px;
   }
+}
+@media (max-width: 575px) {
+
 }
 
 @media (max-width: 500px) {
@@ -1572,6 +1575,10 @@ footer {
   }
   .main-navigation {
     display: none;
+  }
+  ul.design-layout{
+    scale: 0.6;
+    margin-left: -75px;
   }
 }
 
@@ -1601,6 +1608,12 @@ footer {
   }
   .slider-below-show {
     top: 30.2%;
+  }
+}
+
+@media (max-width: 465px){
+  ul.design-layout{
+    scale: 0.5;
   }
 }
 
