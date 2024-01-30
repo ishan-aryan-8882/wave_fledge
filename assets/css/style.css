@@ -113,6 +113,7 @@ a.active-main-nav:hover {
 body {
   background: var(--bgColor) !important;
   position: relative;
+  transition: background 200ms;
 }
 
 .sticky-header {
@@ -121,6 +122,7 @@ body {
   display: block;
   background: var(--bgColor);
   z-index: 11;
+  transition: background 200ms;
 }
 
 .top-header {
