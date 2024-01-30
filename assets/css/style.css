@@ -1057,6 +1057,7 @@ h2.whiteColorChild {
     linear-gradient(0deg, #dee4f2, #dee4f2);
   border-radius: 20px;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .support-img-button img {
@@ -1072,7 +1073,7 @@ h2.whiteColorChild {
 }
 
 .support-img-button a:hover {
-  background: transparent;
+  background: #858991 !important;
 }
 
 .support-content {
@@ -1144,7 +1145,7 @@ ul.design-layout li img.uppersidemove {
 
 .support-inline {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   gap: 1.25rem;
 }
@@ -1477,6 +1478,12 @@ footer {
     font-size: 54px;
     line-height: 70px;
   }
+  .support-content{
+    padding-left: 50px;
+  }
+  .support-inline-left h4 br{
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1516,6 +1523,23 @@ footer {
     font-size: 30px;
     line-height: 40px;
   }
+  .support-inline{
+    flex-direction: column;
+    align-items: start;
+  }
+  .support-inline-right{
+    width: 100%;
+  }
+  .support-inline-right button{
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px){
+  ul.design-layout{
+    margin-left: -85px;
+  }
+
 }
 
 @media (max-width: 576px) {
