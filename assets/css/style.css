@@ -1266,6 +1266,7 @@ footer {
   padding: 70px 0;
   background: #111112;
   position: relative;
+  transition: 500ms;
 }
 
 .light-theme-page footer{
