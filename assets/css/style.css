@@ -887,6 +887,12 @@ span.circle {
   --bs-bg-opacity: 0.3 !important;
   border-radius: 40px;
   overflow: hidden;
+  transition: 500ms;
+}
+
+.light-theme-page .about-service-home .bg-black
+{
+  --bs-bg-opacity: 0.9 !important;
 }
 
 .about-content_inbbg {
@@ -943,6 +949,10 @@ h3.whiteColorWow {
   color: white;
   text-transform: uppercase;
   font-family: "Nohemi-Medium";
+}
+
+.support-img-button a{
+  padding: 15px 30px;
 }
 
 .cst-btn {
@@ -1228,6 +1238,11 @@ ul.design-layout li img.uppersidemove {
   justify-content: start;
 }
 
+.light-theme-page .clients-show h4{
+  color: var(--lightModeText);
+
+}
+
 .clients-show h4 img {
   margin-right: 16px;
 }
@@ -1251,6 +1266,10 @@ footer {
   padding: 70px 0;
   background: #111112;
   position: relative;
+}
+
+.light-theme-page footer{
+  background: white
 }
 
 .footer-curve {
@@ -1289,6 +1308,10 @@ footer {
   font-family: "Nohemi-Regular";
 }
 
+.light-theme-page .footer-logo h6{
+  color: var(--lightModeText);
+}
+
 .footer-section h4 {
   color: white;
   font-family: "Nohemi-Medium";
@@ -1296,6 +1319,10 @@ footer {
   letter-spacing: 1.8px;
   margin-bottom: 72px;
   font-size: 36px;
+}
+
+.light-theme-page .footer-section h4 {
+color: var(--lightModeText);
 }
 
 .footer-section .footer-links ul {
@@ -1323,6 +1350,10 @@ footer {
   letter-spacing: 0.7px;
   font-family: "Nohemi-Medium";
   transition: 500ms;
+}
+
+.light-theme-page .footer-section .footer-links ul li a{
+  color: var(--lightModeText);
 }
 
 .footer-section .footer-links ul li a:hover {
