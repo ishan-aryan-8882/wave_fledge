@@ -1550,6 +1550,9 @@ footer {
     scale: 0.7;
     margin-left: -85px;
   }
+  .clients-show .hr-body{
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1561,9 +1564,19 @@ footer {
     font-size: 32px;
     line-height: 36px;
   }
+  .clients-show h4{
+    font-size: 30px;
+    margin: 10px auto;
+    /* background: red; */
+    width: fit-content;
+  }
+  .clients-show h4 img{
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
 }
-@media (max-width: 575px) {
-}
+
 
 @media (max-width: 500px) {
   .support-inline-left {
@@ -1679,6 +1692,12 @@ footer {
   }
   .hp-cards .custom-cards {
     min-height: 330px !important;
+  }
+}
+
+@media (max-width: 443px){
+  .clients-show h4{
+    font-size: 20px;
   }
 }
 @media (max-width:400px){
