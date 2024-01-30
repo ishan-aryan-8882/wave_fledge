@@ -991,8 +991,19 @@ h2.arrow-h2 {
   line-height: 86px;
   letter-spacing: 0.7px;
   margin: 0px 0px 8px;
-  font-family: "Nohemi-Regular";
+  font-family: "Nohemi-Medium";
   margin-bottom: 8px;
+}
+
+h2.arrow-h2 span{
+  color: #FF9838;
+  position: relative !important;
+}
+
+h2.arrow-h2 span img{
+  position: absolute;
+  bottom: -45px;
+  left: 0;
 }
 
 .leftNewbtn {
@@ -1273,7 +1284,8 @@ footer {
   font-size: 0.875rem;
   color: #717171;
   margin-bottom: 50px;
-  line-height: 1.2px;
+  line-height: 1.2px; 
+  font-family: "Nohemi-Regular";
 }
 
 .footer-section h4{
@@ -1309,8 +1321,13 @@ footer {
   line-height: 22px;
   letter-spacing: 0.7px;
   font-family: "Nohemi-Medium";  
+  transition: 500ms;
 }
-/*////////////////////////////////////////////////*/
+
+.footer-section .footer-links ul li a:hover{
+  color: var(--hoverGold);
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
 
 @keyframes updown-bounce {
@@ -1365,7 +1382,7 @@ footer {
   }
 }
 
-/*////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* media queries */
 
 @media (min-width: 1500px) {
@@ -1374,13 +1391,23 @@ footer {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1401px) {
+  h2.arrow-h2{
+    font-size: 67px;
+  }
 }
 
 @media (max-width: 1201px) {
   .slider-below-show {
     bottom: -24.5%;
     /* border: 2px solid white; */
+  }
+  .about-content_inbbg h3{
+    font-size: 42px;
+    line-height: 48px;
+  }
+  h2.arrow-h2{
+    font-size: 63px;
   }
 }
 
@@ -1430,6 +1457,13 @@ footer {
   }
   .custom-cards-top p {
     font-size: 12px;
+  }
+  .about-content_inbbg h3{
+    font-size: 35px;
+    line-height: 41px;
+  }
+  h2.arrow-h2{
+    font-size: 57px;
   }
 }
 
@@ -1482,6 +1516,10 @@ footer {
   .about-hs h3 {
     font-size: 30px;
     margin-bottom: 10px;
+  }
+  .about-content_inbbg h3{
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
