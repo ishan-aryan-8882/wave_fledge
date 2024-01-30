@@ -1533,12 +1533,22 @@ footer {
   .support-inline-right button {
     width: 100%;
   }
+  .support-content h3 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .support-content {
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 767px) {
-  ul.design-layout{
+  ul.design-layout {
     scale: 0.7;
-    margin-left: -65px;
+    margin-left: -85px;
   }
 }
 
@@ -1553,10 +1563,18 @@ footer {
   }
 }
 @media (max-width: 575px) {
-
 }
 
 @media (max-width: 500px) {
+  .support-inline-left {
+    gap: 1rem;
+    padding: 20px;
+    /* align-items: start; */
+  }
+  .support-inline-left h4 {
+    font-size: 14px;
+    line-height: 25px;
+  }
   .main-navigation li a:not(.active-main-nav) {
     display: none;
   }
@@ -1576,9 +1594,12 @@ footer {
   .main-navigation {
     display: none;
   }
-  ul.design-layout{
+  ul.design-layout {
     scale: 0.6;
     margin-left: -75px;
+  }
+  ul.design-layout {
+    margin-left: -110px;
   }
 }
 
@@ -1611,9 +1632,40 @@ footer {
   }
 }
 
-@media (max-width: 465px){
-  ul.design-layout{
-    scale: 0.5;
+@media (max-width: 465px) {
+  ul.design-layout {
+    scale: 1;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  ul.design-layout li {
+    width: 100%;
+  }
+
+  .design-layout .arrow-prior-box {
+    background: none;
+    transition: none;
+    color: white;
+    position: relative;
+  }
+
+  .design-layout .arrow-prior-box::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: white;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    top: 40%;
+  }
+
+  ul.design-layout li img {
+    display: none;
   }
 }
 
@@ -1627,5 +1679,21 @@ footer {
   }
   .hp-cards .custom-cards {
     min-height: 330px !important;
+  }
+}
+@media (max-width:400px){
+  .support-inline-left {
+    flex-direction: column;
+  }
+  .footer-section .footer-links ul li a{
+    font-size: 14px;
+    white-space: wrap;
+  }
+  .footer-logo img{
+    height: 1rem;
+  }
+  .footer-logo img.icon{
+    height: 2rem;
+    margin-bottom: -15px;
   }
 }
