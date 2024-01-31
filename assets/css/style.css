@@ -1322,6 +1322,7 @@ footer {
   letter-spacing: 1.8px;
   margin-bottom: 72px;
   font-size: 36px;
+  transition:1s
 }
 
 .light-theme-page .footer-section h4 {
