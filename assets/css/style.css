@@ -1526,6 +1526,10 @@ footer {
   width: 763px;
 }
 
+.contact-header_left .animated-hr .hr-body{
+  margin-bottom: 0px;
+}
+
 .contact-header_left h1 {
   font-family: "Nohemi-Regular";
   font-size: 96px;
