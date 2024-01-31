@@ -1420,6 +1420,91 @@ footer {
   animation-duration: 0.5s;
 }
 
+.service-page-expert {
+  margin: 125px 0 200px;
+}
+
+.service-page-box{
+  display: flex;
+  gap: 4.5rem;
+  margin-bottom: 70px;
+  justify-content: safe;
+  align-items: start;
+}
+
+.serviceExpert-image{
+  width: 15.125rem;
+  height: 15.125rem;
+  min-width: 15.125rem;
+  background: #242425;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 5rem;
+}
+
+.serviceExpert-content a h3 {
+  color: white;
+  font-size: 48px;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  font-family: "Nohemi-Medium";
+}
+
+.serviceExpert-content p {
+  color: white;
+  font-family: "Nohemi-Light";
+  font-size: 24px;
+  letter-spacing: 0.8px;
+  margin-bottom: 48px;
+}
+
+.ser-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 52px;
+}
+
+.ser-link a {
+  color: var(--hoverGold);
+  font-family: "Nohemi-Medium";
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  padding-left: 30px;
+}
+
+.ser-link a::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: url("../images/agency-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.meta ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.meta ul li a {
+  background: #242425;
+  border-radius: 200px;
+  color: white;
+  padding: 14px 24px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin: 5px;
+  margin-left: 0px;
+  font-family: "Nohemi-Regular";
+  letter-spacing: 1.2px;
+}
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
 
@@ -1733,7 +1818,7 @@ footer {
     bottom: 0;
     opacity: 1;
   }
-  .banner-service .setting .blur-bg{
+  .banner-service .setting .blur-bg {
     background: var(--hoverGold);
   }
   .banner-service .setting img {
@@ -1891,7 +1976,7 @@ footer {
     scale: 1.8;
     transition: 500ms;
   }
-  .banner-service{
+  .banner-service {
     padding-bottom: 8rem;
   }
 }
