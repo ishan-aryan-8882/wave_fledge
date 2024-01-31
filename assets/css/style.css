@@ -1381,7 +1381,7 @@ color: var(--lightModeText);
   font-size: 16px;
   line-height: 22.4px;
   letter-spacing: 3.2px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   text-transform: uppercase;
   color: #8D8C98;
 }
@@ -1389,7 +1389,7 @@ color: var(--lightModeText);
 .banner-service h1{
   font-size: 96px;
   color: white;
-  line-height: 115px;
+  /* line-height: 115px; */
   letter-spacing: 0.8px;
   margin-bottom: 8px;
   font-family: "Nohemi-Medium";
@@ -1513,6 +1513,9 @@ color: var(--lightModeText);
 }
 
 @media (max-width: 1201px) {
+  .banner-service p{
+    font-size: 14px;
+  }
   .slider-below-show {
     bottom: -24.5%;
     /* border: 2px solid white; */
@@ -1528,7 +1531,7 @@ color: var(--lightModeText);
     font-size: 70px;
   }
   .banner-service{
-    padding: 11rem 0 21rem;
+    padding: 5rem 0 21rem;
   }
 }
 
@@ -1612,6 +1615,9 @@ color: var(--lightModeText);
 }
 
 @media (max-width: 768px) {
+  .banner-service p{
+    font-size: 12px;
+  }
   .banner-service .setting{
     bottom: -30.5%;
   }
