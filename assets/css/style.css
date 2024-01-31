@@ -892,8 +892,7 @@ span.circle {
   transition: 500ms;
 }
 
-.light-theme-page .about-service-home .bg-black
-{
+.light-theme-page .about-service-home .bg-black {
   --bs-bg-opacity: 0.9 !important;
 }
 
@@ -953,7 +952,7 @@ h3.whiteColorWow {
   font-family: "Nohemi-Medium";
 }
 
-.support-img-button a{
+.support-img-button a {
   padding: 15px 30px;
 }
 
@@ -1240,9 +1239,8 @@ ul.design-layout li img.uppersidemove {
   justify-content: start;
 }
 
-.light-theme-page .clients-show h4{
+.light-theme-page .clients-show h4 {
   color: var(--lightModeText);
-
 }
 
 .clients-show h4 img {
@@ -1271,8 +1269,8 @@ footer {
   transition: 500ms;
 }
 
-.light-theme-page footer{
-  background: white
+.light-theme-page footer {
+  background: white;
 }
 
 .footer-curve {
@@ -1311,7 +1309,7 @@ footer {
   font-family: "Nohemi-Regular";
 }
 
-.light-theme-page .footer-logo h6{
+.light-theme-page .footer-logo h6 {
   color: var(--lightModeText);
 }
 
@@ -1322,11 +1320,11 @@ footer {
   letter-spacing: 1.8px;
   margin-bottom: 72px;
   font-size: 36px;
-  transition:1s
+  transition: 1s;
 }
 
 .light-theme-page .footer-section h4 {
-color: var(--lightModeText);
+  color: var(--lightModeText);
 }
 
 .footer-section .footer-links ul {
@@ -1356,7 +1354,7 @@ color: var(--lightModeText);
   transition: 500ms;
 }
 
-.light-theme-page .footer-section .footer-links ul li a{
+.light-theme-page .footer-section .footer-links ul li a {
   color: var(--lightModeText);
 }
 
@@ -1365,7 +1363,7 @@ color: var(--lightModeText);
 }
 
 /*expertise-page*/
-.banner-service{
+.banner-service {
   position: relative;
   background: #131313;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
@@ -1376,17 +1374,17 @@ color: var(--lightModeText);
   /* height: 47.875rem; */
 }
 
-.banner-service p{
+.banner-service p {
   font-family: "Nohemi-SemiBold";
   font-size: 16px;
   line-height: 22.4px;
   letter-spacing: 3.2px;
   /* margin-bottom: 32px; */
   text-transform: uppercase;
-  color: #8D8C98;
+  color: #8d8c98;
 }
 
-.banner-service h1{
+.banner-service h1 {
   font-size: 96px;
   color: white;
   /* line-height: 115px; */
@@ -1396,21 +1394,19 @@ color: var(--lightModeText);
   transition: 500ms;
 }
 
-.banner-service h1 span{
-  color: #FF9838;
+.banner-service h1 span {
+  color: #ff9838;
 }
 
-
-.banner-service .setting{
+.banner-service .setting {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -36%;
+  bottom: -38%;
   animation: rotateImg 18s linear infinite;
 }
 
-.banner-service .setting .blur-bg
-{
+.banner-service .setting .blur-bg {
   background: rgba(255, 152, 56, 0.2);
   filter: blur(100px);
   position: absolute;
@@ -1420,7 +1416,7 @@ color: var(--lightModeText);
   bottom: 0;
 }
 
-.banner-service.wow.zoomIn{
+.banner-service.wow.zoomIn {
   animation-duration: 0.5s;
 }
 
@@ -1480,13 +1476,13 @@ color: var(--lightModeText);
 }
 
 @keyframes rotateImg {
-  from{
+  from {
     left: 50%;
-    transform:translateX(-50%) rotate(0deg);
+    transform: translateX(-50%) rotate(0deg);
   }
-  to{
+  to {
     left: 50%;
-    transform:translateX(-50%) rotate(-360deg);
+    transform: translateX(-50%) rotate(-360deg);
   }
 }
 
@@ -1504,16 +1500,19 @@ color: var(--lightModeText);
     font-size: 67px;
     line-height: 72px;
   }
-  .banner-service h1{
+  .banner-service h1 {
     font-size: 82.5px;
   }
-  .banner-service{
+  .banner-service {
     padding: 11rem 0 25rem;
   }
 }
 
 @media (max-width: 1201px) {
-  .banner-service p{
+  .banner-service .setting {
+    bottom: -44%;
+  }
+  .banner-service p {
     font-size: 14px;
   }
   .slider-below-show {
@@ -1527,10 +1526,10 @@ color: var(--lightModeText);
   h2.arrow-h2 {
     font-size: 63px;
   }
-  .banner-service h1{
+  .banner-service h1 {
     font-size: 70px;
   }
-  .banner-service{
+  .banner-service {
     padding: 5rem 0 21rem;
   }
 }
@@ -1590,14 +1589,17 @@ color: var(--lightModeText);
     font-size: 57px;
     line-height: 60px;
   }
-  .banner-service h1{
+  .banner-service h1 {
     font-size: 60px;
   }
 }
 
 @media (max-width: 992px) {
-  .banner-service{
+  .banner-service {
     padding: 5rem 0 15rem;
+  }
+  .banner-service .setting {
+    bottom: -41%;
   }
   .project-text-box h5 br {
     display: none;
@@ -1615,18 +1617,19 @@ color: var(--lightModeText);
 }
 
 @media (max-width: 768px) {
-  .banner-service p{
+  .banner-service .setting {
+    bottom: -27%;
+  }
+  .banner-service p {
     font-size: 12px;
   }
-  .banner-service .setting{
-    bottom: -30.5%;
+  .banner-service {
+    padding: 8rem 1rem 13rem;
   }
-  .banner-service{
-    padding: 5rem 0 10rem;
-  }
-  .banner-service h1{
+  .banner-service h1 {
     font-size: 60px;
     line-height: 70px;
+    margin-top: 20px;
   }
   .sticky-header .click-shy {
     display: none;
@@ -1716,14 +1719,31 @@ color: var(--lightModeText);
     margin-right: 10px;
     vertical-align: top;
   }
+  .banner-service {
+    padding: 8rem 1rem 12rem;
+  }
+  .banner-service h1 {
+    font-size: 65px !important;
+    line-height: 70px !important;
+    z-index: 111;
+    position: relative;
+  }
+  .banner-service .setting {
+    animation: none;
+    bottom: 0;
+    opacity: 1;
+  }
+  .banner-service .setting .blur-bg{
+    background: var(--hoverGold);
+  }
+  .banner-service .setting img {
+    opacity: 0.1;
+    scale: 1.5;
+  }
 }
 
 @media (max-width: 500px) {
-  .banner-service h1{
-    font-size: 60px;
-    line-height: 65px;
-  }
-  .support-img-button a{
+  .support-img-button a {
     font-size: 12px;
     padding: 20px;
     right: 50%;
@@ -1866,5 +1886,12 @@ color: var(--lightModeText);
   .footer-logo img.icon {
     height: 2rem;
     margin-bottom: -15px;
+  }
+  .banner-service .setting img {
+    scale: 1.8;
+    transition: 500ms;
+  }
+  .banner-service{
+    padding-bottom: 8rem;
   }
 }

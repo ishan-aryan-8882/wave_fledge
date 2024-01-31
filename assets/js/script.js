@@ -253,14 +253,24 @@ $(document).ready(function () {
   });
   //------------end---------------
 
-
-
-
-
-
-
-
-
-
   //--------------------------ending parenthesis-------------------------------------------------------------//
 });
+
+//change the image of the expertise rotating ring
+$(document).ready(function() {
+  const imgElement = $('.setting-img img');
+
+  function updateImageSrc() {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth >= 577) {
+      imgElement.attr('src', 'assets/images/service/setting.svg');
+    } else {
+      imgElement.attr('src', 'assets/images/service/setting2.png');
+    }
+  }
+
+  $(window).resize(updateImageSrc);
+  updateImageSrc();
+});
+
