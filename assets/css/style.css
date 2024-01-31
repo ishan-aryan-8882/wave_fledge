@@ -1520,6 +1520,7 @@ footer {
   padding: 70px 110px;
   background: #1c1c1d;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-header_left {
@@ -1562,6 +1563,24 @@ footer {
 
 .contact-header_right svg circle{
   animation: rotatingSvg 0s infinite linear;
+}
+
+.contact-form .form-group
+{
+  background: #1C1C1D;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-form .form-control
+{
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Nohemi-Medium";
+  letter-spacing: 0.05rem;
 }
 
 
