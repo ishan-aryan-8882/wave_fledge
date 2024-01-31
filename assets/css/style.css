@@ -1546,9 +1546,10 @@ footer {
 .contact-header_right svg {
   fill: currentColor;
   height: auto;
-  /* max-width: 66vmin; */
+  max-width: 66vmin;
   transform-origin: center;
   width: 100%;
+  animation: rotatingSvg 50s infinite linear;
 }
 .contact-header_right textPath{
   text-transform: uppercase;
@@ -1616,6 +1617,18 @@ footer {
   to {
     left: 50%;
     transform: translateX(-50%) rotate(-360deg);
+  }
+}
+
+@keyframes rotatingSvg {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
   }
 }
 
