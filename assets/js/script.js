@@ -141,9 +141,9 @@ $(document).ready(function () {
 
   // sticky nav top border and scroll progress visiblity
   function borderHeader() {
-    let homeCarousel = $(".home-page-carousel");
+    let homeCarousel = $(".arrow-trigger");
     let homeCarouselRect1 = homeCarousel[0].getBoundingClientRect();
-    // console.log(homeCarouselRect1.top);
+    console.log(homeCarouselRect1.top);
     // 872
     if (homeCarouselRect1.top < 0) {
       $(".sticky-header").addClass("border-bottom-custom");
