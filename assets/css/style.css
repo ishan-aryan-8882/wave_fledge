@@ -1424,7 +1424,7 @@ footer {
   margin: 125px 0 200px;
 }
 
-.service-page-box{
+.service-page-box {
   display: flex;
   gap: 4.5rem;
   margin-bottom: 70px;
@@ -1432,7 +1432,7 @@ footer {
   align-items: start;
 }
 
-.serviceExpert-image{
+.serviceExpert-image {
   width: 15.125rem;
   height: 15.125rem;
   min-width: 15.125rem;
@@ -1503,6 +1503,39 @@ footer {
   margin-left: 0px;
   font-family: "Nohemi-Regular";
   letter-spacing: 1.2px;
+}
+
+.contactExpertise{
+  background: #111112;
+  border-radius: 32px 32px 0px 0px;
+  padding: 4.375rem 0;
+  margin-bottom: 0;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+  padding: 70px 110px;
+  background: #1c1c1d;
+  border-radius: 20px;
+}
+
+.contact-header_left {
+  width: 763px;
+}
+
+.contact-header_left h1 {
+  font-family: "Nohemi-Regular";
+  font-size: 96px;
+  letter-spacing: 0.8px;
+  margin-bottom: 64px;
+  color: white;
+}
+
+.contact-header_left h1 span {
+  color: var(--hoverGold);
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
