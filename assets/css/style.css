@@ -1619,6 +1619,12 @@ footer {
   font-size: 17px;
 }
 
+textarea:focus{
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: 0 0 0 transparent !important;
+}
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
 
@@ -1890,6 +1896,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .service-page-expert{
+    padding: 0;
+  }
   .contact-header_left h1{
     max-width: 400px;
     margin: auto;
@@ -2049,9 +2058,18 @@ footer {
 
 @media (max-width: 500px) {
   .contact-header_left h1{
-    /* background: red; */
-    /* font-size: 60px; */
-    width: 99%;
+    font-size: 50px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    padding-left: 30px;
+  }
+  .contact-header_left h1 br{
+    display: none;
+  }
+  .contact-header_left .animated-hr{
+    width: 50%;
     margin: auto;
   }
   .meta ul li{
@@ -2193,8 +2211,18 @@ footer {
   .clients-show h4 {
     font-size: 20px;
   }
+  .contact-header_left h1{
+    font-size: 40px;
+    /* background: red; */
+    width: 360px !important;
+    margin: auto;
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 400px) {
+  .contact-header{
+    padding-bottom: 30px;
+  }
   .support-inline-left {
     flex-direction: column;
   }
