@@ -1579,12 +1579,12 @@ footer {
 
 .contact-form .form-group label
 {
-  font-size:14px;
+  font-size:15px;
   color: #ffffff;
   margin-bottom: 5px;
   min-height: 30px;
   font-family: "Nohemi-Regular";
-  letter-spacing: 0.7px;
+  letter-spacing: 1px;
 }
 
 .contact-form .form-group label span{
@@ -1601,7 +1601,27 @@ footer {
   letter-spacing: 0.05rem;
 }
 
+.custom-height{
+  height: 320px;
+  overflow: hidden;
+}
 
+.contact-form .form-group .custom_submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-form .form-group .custom_submit button{
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  gap: 10px  ;
+  color: white;
+  font-family: "Nohemi-Regular";
+  font-size: 17px;
+}
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
