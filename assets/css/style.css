@@ -438,29 +438,25 @@ img.dark-page {
 
 .arrow-progress-tracker {
   position: fixed;
-  bottom: 20px;
-  right: 40px;
-}
-
-.arrow-progress-tracker {
-  height: 40px;
-  width: 40px;
+  height: 46px;
+  width: 46px;
   /* background: #df7e36; */
   border-radius: 50%;
   position: fixed;
-  bottom: 30px;
+  bottom: 15px;
   right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
+  transition: bottom 500ms, right 500ms;
 }
 
 .arrow-progress-tracker .fa-solid.fa-arrow-up {
   color: #df7e36;
   background: var(--bgColor);
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1817,6 +1813,33 @@ footer {
 }
 
 @media (max-width: 992px) {
+  .service-page-box{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background: blue; */
+  }
+  .ser-link{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .meta ul{
+    display: flex;
+    /* background: red; */
+    width: 100%;
+    justify-content:center;
+    gap: 1rem;
+  }
+  .meta ul li{
+    /* background: red; */
+    width: 40%;
+    min-width: fit-content;
+  }
+  .meta ul li a{
+   width: 100%;
+   padding: 30px 24px;
+  }
   .banner-service {
     padding: 5rem 0 15rem;
   }
@@ -1839,6 +1862,25 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .serviceExpert-content a h3{
+    font-size: 30px;
+  }
+  .serviceExpert-content p{
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+  }
+  .meta ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .meta ul li{
+    /* background: red; */
+    width: 50%;
+  }
+  .meta ul li a{
+    padding: 24px 24px;
+  }
   .banner-service .setting {
     bottom: -27%;
   }
@@ -1964,7 +2006,26 @@ footer {
   }
 }
 
+@media (min-width:500px) and (max-width:701px) {
+  .arrow-progress-tracker{
+    bottom: 90px;
+    right: 45%;
+    transition: bottom 500ms, right 500ms;
+  }
+}
+
 @media (max-width: 500px) {
+  .meta ul li{
+    width: 70%;
+  }
+  .serviceExpert-content a h3{
+    font-size: 25px;
+  }
+  .serviceExpert-content p{
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+  }
   .support-img-button a {
     font-size: 12px;
     padding: 20px;
