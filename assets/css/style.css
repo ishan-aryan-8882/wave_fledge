@@ -1573,6 +1573,24 @@ footer {
   margin-bottom: 0.75rem;
 }
 
+.contact-form .form-group ::placeholder{
+  color: gray;
+}
+
+.contact-form .form-group label
+{
+  font-size:14px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  min-height: 30px;
+  font-family: "Nohemi-Regular";
+  letter-spacing: 0.7px;
+}
+
+.contact-form .form-group label span{
+  color: var(--hoverGold);
+}
+
 .contact-form .form-control
 {
   background: transparent;
