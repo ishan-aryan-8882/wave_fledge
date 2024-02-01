@@ -1520,7 +1520,7 @@ footer {
 }
 
 .contact-header_left {
-  width: 763px;
+  /* width: 763px; */
 }
 
 .contact-header_left .animated-hr .hr-body{
@@ -1775,7 +1775,7 @@ textarea.form-control,.form-group input{
     gap: 3rem;
   }
   .contact-header_left{
-    width: 500px;
+    /* width: 500px; */
   }
   .contact-header_left h1{
     font-size: 80px;
@@ -2104,12 +2104,6 @@ textarea.form-control,.form-group input{
     font-size: 14px;
     line-height: 25px;
   }
-  .main-navigation li a:not(.active-main-nav) {
-    display: none;
-  }
-  .main-navigation ul {
-    display: block;
-  }
   .home-carousel-absolute-text-box h2 {
     font-size: 40px;
     line-height: 41px;
@@ -2122,6 +2116,7 @@ textarea.form-control,.form-group input{
   }
   .main-navigation {
     display: none;
+
   }
   ul.design-layout {
     scale: 0.6;
