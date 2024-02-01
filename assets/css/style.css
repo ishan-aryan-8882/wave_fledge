@@ -1619,10 +1619,14 @@ footer {
   font-size: 17px;
 }
 
-textarea:focus{
+textarea.form-control:focus,.form-group input:focus{
   background: transparent !important;
   border-color: transparent !important;
   box-shadow: 0 0 0 transparent !important;
+}
+
+textarea.form-control,.form-group input{
+  color: rgb(255, 255, 255);
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
