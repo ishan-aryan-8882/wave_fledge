@@ -1629,6 +1629,17 @@ textarea.form-control,.form-group input{
   color: rgb(255, 255, 255);
 }
 
+.light-theme-page .serviceExpert-content a h3{
+  color: var(--lightModeText);
+}
+.light-theme-page .serviceExpert-content p{
+  color: var(--lightModeText);
+}
+
+.light-theme-page .meta a{
+  background: var(--lightModeText);
+}
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
 
