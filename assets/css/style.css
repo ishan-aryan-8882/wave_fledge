@@ -1699,15 +1699,11 @@ textarea.form-control,
 }
 
 .banner-circle-animation svg textPath {
-  position: absolute;
-  z-index: 10;
-  inset: 0;
-  color: var(--hoverGold);
-  transform: translate(-50%,-50%);
   font-size: 4px;
   fill: #ff9838;
   text-transform: uppercase;
   animation: rotateFixCenter 1s linear infinite;
+  /* position: absolute; */
 }
 
 .banner-circle-animation .box-shadow {
@@ -1722,10 +1718,10 @@ textarea.form-control,
 
 .banner-circle-animation .circle-rotating {
   position: relative;
-  border-radius: 50%;
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;
+  /* background: red; */
 }
 
 .banner-circle-animation .circle-rotating img {
