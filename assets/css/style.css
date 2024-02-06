@@ -1870,6 +1870,17 @@ textarea.form-control,
   .banner-service {
     padding: 5rem 0 21rem;
   }
+  .banner-main-project h3{
+    font-size: 56px;
+    line-height: 65px;
+  }
+  .banner-counter ul li h3{
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .banner-counter ul li p{
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1199px) and (max-width: 1401px) {
@@ -2007,9 +2018,42 @@ textarea.form-control,
   .support-inline-left h4 br {
     display: none;
   }
+  .banner-main-project{
+    padding: 70px;
+  }
+  .banner-main-project h3{
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .banner-main-project p{
+    font-size: 12px;
+  }
+  .banner-main-project ul{
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
+  .banner-main-project{
+    padding: 50px;
+  }
+  .banner-main-project h3{
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .banner-main-project  p{
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+  }
+  .banner-main-project ul li h3{
+    font-size: 18px;
+  }
+  .banner-main-project ul li p{
+    font-size: 13px;
+    width: 100%;
+  }
   .service-page-expert {
     padding: 0;
   }
@@ -2171,6 +2215,16 @@ textarea.form-control,
 }
 
 @media (max-width: 500px) {
+  .banner-main-project{
+    padding: 20px 35px 10px;
+  }
+  .banner-main-project h3{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .rot-360 {
+    opacity: 0.1;
+  }
   .contact-header_left h1 {
     font-size: 60px;
     width: 100%;
@@ -2325,6 +2379,19 @@ textarea.form-control,
     width: 360px !important;
     margin: auto;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width:428px) {
+  .banner-main-project{
+    padding: 30px 20px 10px ;
+  }
+  .banner-main-project ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .banner-counter ul{
+    gap: 2rem;
   }
 }
 @media (max-width: 400px) {
