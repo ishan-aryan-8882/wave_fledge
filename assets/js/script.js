@@ -267,6 +267,7 @@ $(document).ready(function () {
       startCounter(targetNumber, this);
     });
   }
+  //------------end----------------
 
   //button in view animation read more
   const $element = $("#myElement");

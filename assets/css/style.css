@@ -1646,6 +1646,7 @@ textarea.form-control,
   overflow: hidden;
   position: relative;
   margin-bottom: 100px;
+  transition: 500ms;
 }
 
 .banner-main-project p {
