@@ -1699,6 +1699,8 @@ textarea.form-control,
 }
 
 .banner-circle-animation svg textPath {
+  position: absolute;
+  z-index: 10;
   inset: 0;
   color: var(--hoverGold);
   transform: translate(-50%,-50%);
