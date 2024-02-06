@@ -249,7 +249,7 @@ $(document).ready(function () {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             // Start the counter when the section is in view
-            counterInterval = setInterval(updateCounter, 50);
+            counterInterval = setInterval(updateCounter, 30);
             observer.disconnect(); // Disconnect the observer once started
           }
         });
