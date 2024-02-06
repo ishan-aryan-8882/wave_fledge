@@ -36,6 +36,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"
     />
+    <!-- tab-filter -->
+    <link rel="stylesheet" href="https://github.com/sindresorhus/github-markdown-css/blob/gh-pages/github-markdown.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap">
   </head>
   <body>
     <div class="arrow-progress-tracker">
@@ -173,6 +176,54 @@
         </div>
       </div>
     </section>
+    
+    <div class="container">
+    <div data-js="hero-demo">
+        <div class="ui-group">
+          <div class="filters button-group js-radio-button-group device-type">
+            <p>I want to see : </p>
+            <button class="button is-checked" data-filter="*">All</button>
+            <button class="button" data-filter=".cat-1">Category 1</button>
+            <button class="button" data-filter=".cat-2">Category 2</button>
+            <button class="button" data-filter=".cat-3">Category 3</button>      
+          </div>
+        </div>
+        <div class="grid row">
+           <div class="col-md-12 element-item cat-1" data-category="cat-1">           
+                <div>
+                
+                  <h1>Title</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut.</p>
+                </div>
+           </div>
+           <div class="col-md-12 element-item cat-2" data-category="cat-2">
+          
+                <div>
+                  <h1>Title</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut.</p>
+                </div>
+           </div>
+           <div class="col-md-12 element-item cat-3" data-category="cat-3">            
+                <div>
+                  <h1>Title</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut.</p>
+                </div>
+           </div>
+           <div class="col-md-12 element-item cat-1" data-category="cat-1">            
+                <div>
+                  <h1>Title</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut.</p>
+                </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="contactExpertise">
         <div class="container">
           <div class="row">
@@ -399,6 +450,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <!-- wow js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- tab-filter -->
+    <script src="https://demo-ochre.vercel.app/isotope-docs.min.js"></script>
     <!-- my js-->
     <script src="assets/js/script.js"></script>
   </body>
