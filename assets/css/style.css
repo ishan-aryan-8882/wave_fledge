@@ -1643,7 +1643,7 @@ textarea.form-control,
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 7rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   margin-bottom: 100px;
 }
@@ -1690,22 +1690,25 @@ textarea.form-control,
   letter-spacing: 0.05rem;
 }
 
-.banner-circle-animation{
+.banner-circle-animation {
   position: absolute;
-  position: absolute;
-  right: -200px;
-  bottom: -200px;
+  right: -243px;
+  bottom: -243px;
   width: 486px;
   height: 486px;
 }
 
 .banner-circle-animation svg textPath {
-  font-size:4px;
+  inset: 0;
+  color: var(--hoverGold);
+  transform: translate(-50%,-50%);
+  font-size: 4px;
   fill: #ff9838;
   text-transform: uppercase;
+  animation: rotateFixCenter 1s linear infinite;
 }
 
-.banner-circle-animation .box-shadow{
+.banner-circle-animation .box-shadow {
   background: rgba(255, 152, 56, 0.08);
   filter: blur(100px);
   position: absolute;
@@ -1715,8 +1718,7 @@ textarea.form-control,
   right: 0;
 }
 
-.banner-circle-animation .circle-rotating{
-  animation: rotateImg 15s linear infinite;
+.banner-circle-animation .circle-rotating {
   position: relative;
   border-radius: 50%;
   display: flex;
@@ -1724,6 +1726,9 @@ textarea.form-control,
   align-items: center;
 }
 
+.banner-circle-animation .circle-rotating img {
+  animation: rotateFixCenter 15s linear infinite;
+}
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
@@ -1806,6 +1811,15 @@ textarea.form-control,
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateFixCenter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
 
