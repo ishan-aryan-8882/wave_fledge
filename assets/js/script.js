@@ -166,54 +166,107 @@ $(document).ready(function () {
   //------------end----------------
 
   //custom card counter
-  function startCounter(targetNumber, counterElement) {
-    let count = 0;
-
-    function updateCounter() {
-      let remainingDifference = targetNumber - count;
-      let randomIncrement = Math.min(
-        Math.floor(Math.random() * 10) + 1,
-        remainingDifference
-      );
-
-      count += randomIncrement;
-      $(counterElement).text(count);
-
-      if (count >= targetNumber) {
-        clearInterval(counterInterval);
-      }
-    }
-
-    var counterInterval;
-
-    // Options for the Intersection Observer
-    const options = {
-      threshold: 0.5, // Trigger when 50% of the element is in view
-    };
-
-    // Callback function for the Intersection Observer
-    function handleIntersection(entries, observer) {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Start the counter when the section is in view
-          counterInterval = setInterval(updateCounter, 1);
-          observer.disconnect(); // Disconnect the observer once started
+  if($('.hp-cards').length){
+    function startCounter(targetNumber, counterElement) {
+      let count = 0;
+  
+      function updateCounter() {
+        let remainingDifference = targetNumber - count;
+        let randomIncrement = Math.min(
+          Math.floor(Math.random() * 10) + 1,
+          remainingDifference
+        );
+  
+        count += randomIncrement;
+        $(counterElement).text(count);
+  
+        if (count >= targetNumber) {
+          clearInterval(counterInterval);
         }
-      });
+      }
+  
+      var counterInterval;
+  
+      // Options for the Intersection Observer
+      const options = {
+        threshold: 0.5, // Trigger when 50% of the element is in view
+      };
+  
+      // Callback function for the Intersection Observer
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Start the counter when the section is in view
+            counterInterval = setInterval(updateCounter, 1);
+            observer.disconnect(); // Disconnect the observer once started
+          }
+        });
+      }
+  
+      // Create the Intersection Observer
+      const observer = new IntersectionObserver(handleIntersection, options);
+  
+      // Observe the target element
+      observer.observe(counterElement);
     }
-
-    // Create the Intersection Observer
-    const observer = new IntersectionObserver(handleIntersection, options);
-
-    // Observe the target element
-    observer.observe(counterElement);
+    let counterElements = $(".counter-cc");
+    counterElements.each(function () {
+      let targetNumber = $(this).data("target");
+      startCounter(targetNumber, this);
+    });
   }
-  let counterElements = $(".counter-cc");
-  counterElements.each(function () {
-    let targetNumber = $(this).data("target");
-    startCounter(targetNumber, this);
-  });
   //------------end----------------
+
+  // for projects page
+  if($(".banner-projects").length){
+    function startCounter(targetNumber, counterElement) {
+      let count = 0;
+  
+      function updateCounter() {
+        let remainingDifference = targetNumber - count;
+        let randomIncrement = Math.min(
+          Math.floor(Math.random() * 10) + 1,
+          remainingDifference
+        );
+  
+        count += randomIncrement;
+        $(counterElement).text(count);
+  
+        if (count >= targetNumber) {
+          clearInterval(counterInterval);
+        }
+      }
+  
+      var counterInterval;
+  
+      // Options for the Intersection Observer
+      const options = {
+        threshold: 0.5, // Trigger when 50% of the element is in view
+      };
+  
+      // Callback function for the Intersection Observer
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Start the counter when the section is in view
+            counterInterval = setInterval(updateCounter, 50);
+            observer.disconnect(); // Disconnect the observer once started
+          }
+        });
+      }
+  
+      // Create the Intersection Observer
+      const observer = new IntersectionObserver(handleIntersection, options);
+  
+      // Observe the target element
+      observer.observe(counterElement);
+    }
+    let counterElements = $(".counter-cc");
+    counterElements.each(function () {
+      let targetNumber = $(this).data("target");
+      startCounter(targetNumber, this);
+    });
+  }
 
   //button in view animation read more
   const $element = $("#myElement");

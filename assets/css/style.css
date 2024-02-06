@@ -1683,6 +1683,7 @@ textarea.form-control,
   letter-spacing: 0.05rem;
   line-height: 2rem;
   margin-bottom: 1rem;
+  transition: all 0.2s;
 }
 
 .banner-counter ul li p {
