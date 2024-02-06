@@ -1732,15 +1732,19 @@ textarea.form-control,
 .light-theme-page .banner-main-project {
   background: white;
   margin-top: 20px;
+  transition: 500ms;
 }
 
 .light-theme-page .banner-main-project h3 {
   color: rgb(158, 153, 153);
+  transition: 500ms;
 }
 
 .light-theme-page .banner-main-project .box-shadow {
-  background: RGB(255, 152, 56);
+  background: rgb(255, 187, 0);
   opacity: 0.4;
+  transition: 500ms;
+
 }
 
 .light-theme-page .banner-main-project ul li h3 {
