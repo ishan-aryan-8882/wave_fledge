@@ -1663,6 +1663,7 @@ textarea.form-control,
   line-height: 4.5rem;
   color: #ffffff;
   font-size: 4rem;
+  transition: all 1s;
 }
 
 .banner-main-project h3 span {
