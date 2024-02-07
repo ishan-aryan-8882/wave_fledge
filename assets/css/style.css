@@ -2216,6 +2216,29 @@ p.desc-top {
   margin-top: 20px;
 }
 
+.insightsExplore{
+  color: white;
+  font-family: "Nohemi-Medium";
+  font-size: 12px;
+  margin-bottom: 32px;
+  padding:17px 40px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.192);
+  width: fit-content;
+  border-radius: 20px;
+  display: block;
+}
+
+.insights-item-content .user{
+  gap: 10px;
+}
+
+.insights-item-content .user p{
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Nohemi-Regular";
+  letter-spacing: 0.7px;
+}
+
 
 /* git test */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
