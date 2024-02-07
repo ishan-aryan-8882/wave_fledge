@@ -2046,6 +2046,12 @@ p.desc-top {
 }
 
 @media (max-width: 1201px) {
+  .filters p{
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 8px;
+  }
+
   p.desc-top{
     font-size: 14px;
   }
@@ -2166,6 +2172,7 @@ p.desc-top {
 }
 
 @media (max-width: 992px) {
+
   .contact-header_left h1 {
     font-size: 70px;
   }
@@ -2378,16 +2385,8 @@ p.desc-top {
 }
 
 @media (max-width: 767px) {
-  .filters button {
-    padding: 5px 10px;
-    margin: 5px;
-  }
   .grid > li {
     width: calc(100% - 30px);
-  }
-  .element-item p {
-    font-size: 16px;
-    line-height: 22px;
   }
 }
 
@@ -2443,6 +2442,10 @@ p.desc-top {
 }
 
 @media (max-width: 500px) {
+  .filters button{
+    font-size: 12px;
+    letter-spacing: 0.8px;
+  }
   .banner-main-project {
     padding: 20px 35px 10px;
   }
