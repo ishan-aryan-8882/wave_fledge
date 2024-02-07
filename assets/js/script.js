@@ -272,6 +272,14 @@ $(document).ready(function () {
   }
   //------------end----------------
 
+  // for insights page
+  if ($(".blog-scrollable").length) {
+    $(".animated-hr").css({
+      height: "0px",
+    });
+  }
+  //------------end----------------
+
   //button in view animation read more
   const $element = $("#myElement");
   const observer = new IntersectionObserver((entries) => {
