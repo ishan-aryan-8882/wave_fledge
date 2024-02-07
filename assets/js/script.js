@@ -266,6 +266,11 @@ $(document).ready(function () {
       let targetNumber = $(this).data("target");
       startCounter(targetNumber, this);
     });
+    $('.animated-hr').css({
+      'height': '0px',
+      'opacity': '0.6'
+    });
+    
   }
   //------------end----------------
 

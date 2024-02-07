@@ -1752,10 +1752,6 @@ textarea.form-control,
   color: rgb(99, 99, 99);
 }
 
-.animated-hr
-{
-  /* height: 0px; */
-}
 
 .ui-group{
   display: flex;
@@ -1800,7 +1796,7 @@ textarea.form-control,
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  background: red;
+
 }
 
 .filters {
@@ -1816,18 +1812,88 @@ textarea.form-control,
   color: #121212 !important;
 }
 
-.element-item > div {
-  padding: 20px 15px;
-  background-color: #121212;
-  color: #dddddd;
-}
-.element-item p {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Lato", sans-serif;
+.cat-img{
+  height: auto;
+  width: 100%;
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
 }
 
+.element-item{
+  margin-bottom: 80px;
+}
 
+.element-item:hover .cat-img img{
+  scale: 1.05;
+}
+
+.element-item:hover .img-text {
+  scale: 1.2;
+}
+
+.element-item:hover button{
+  background: var(--hoverGold);
+  color: white;
+  border-color: var(--hoverGold);
+}
+
+.cat-img img{
+  width: 100%;
+  height: 100%;
+  border-radius:12px;
+  transition: 400ms ease-in-out;
+}
+
+.img-text{
+  /* background: red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform-origin: left;
+}
+
+.cat-date{
+  /* background: red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.grid h4.img-text{
+  color: white;
+  transition: 500ms;
+  font-size: 2.25rem;
+  letter-spacing: 0.7px;
+  font-family: "Nohemi-Regular";
+}
+
+p.cat-date{
+  color: gray;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  font-family: "Nohemi-Regular";
+}
+
+p.desc-top{
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  font-family: "Nohemi-Regular";
+  margin-bottom: 20px;
+}
+
+.cat-desc button{
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  outline: none;
+  color: white;
+  height: 52px;
+  padding: 17px 2.5rem 13px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-family: "Nohemi-Regular";
+  background: transparent;
+  letter-spacing: 1.5px;
+  transition: 400ms ease-in-out;
+}
 
 /* git test */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -1932,7 +1998,6 @@ textarea.form-control,
   }
   .grid.MoreWidth{
     max-width: 1600px !important;
-    background: blue;
   }
 }
 
