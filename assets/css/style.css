@@ -2007,6 +2007,17 @@ p.desc-top {
   border-top-color: rgb(27, 27, 27);
 }
 
+.light-theme-page .blur-bg{
+  display: none;
+}
+.light-theme-page .box-shadow{
+  display: none;
+}
+
+.light-theme-page .banner-circle-animation
+svg{
+  fill: #ff7c01;
+}
 /* git test */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
@@ -2554,7 +2565,7 @@ p.desc-top {
     line-height: 40px;
   }
   .rot-360 {
-    opacity: 0.1;
+    opacity: 0.5;
   }
   .contact-header_left h1 {
     font-size: 60px;
