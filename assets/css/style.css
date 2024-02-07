@@ -1376,12 +1376,12 @@ footer {
   margin-top: 20px;
 }
 
-.light-theme-page .banner-service h1{
+.light-theme-page .banner-service h1 {
   color: var(--lightModeText);
 }
 
-.light-theme-page .banner-service .setting .blur-bg{
-  background: #FF901E;
+.light-theme-page .banner-service .setting .blur-bg {
+  background: #ff901e;
   opacity: 0.6;
 }
 
@@ -1653,6 +1653,7 @@ textarea.form-control,
   background: var(--lightModeText);
 }
 
+/* projects page starts here */
 .banner-main-project {
   background: #131313;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
@@ -1800,6 +1801,18 @@ textarea.form-control,
   font-family: "Nohemi-Regular";
   border: none;
 }
+
+.light-theme-page .filters button{
+  background: white;
+  color: var(--lightModeText);
+  border: 1px solid var(--lightModeText);
+}
+
+.light-theme-page .filters button.is-checked {
+  color: white !important;
+  background: var(--lightModeText) !important;
+}
+
 
 .grid.MoreWidth {
   min-width: 100%;
@@ -2007,15 +2020,14 @@ p.desc-top {
   border-top-color: rgb(27, 27, 27);
 }
 
-.light-theme-page .blur-bg{
+.light-theme-page .blur-bg {
   display: none;
 }
-.light-theme-page .box-shadow{
+.light-theme-page .box-shadow {
   display: none;
 }
 
-.light-theme-page .banner-circle-animation
-svg{
+.light-theme-page .banner-circle-animation svg {
   fill: #ff7c01;
 }
 /* git test */
