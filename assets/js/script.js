@@ -166,32 +166,32 @@ $(document).ready(function () {
   //------------end----------------
 
   //custom card counter
-  if($('.hp-cards').length){
+  if ($(".hp-cards").length) {
     function startCounter(targetNumber, counterElement) {
       let count = 0;
-  
+
       function updateCounter() {
         let remainingDifference = targetNumber - count;
         let randomIncrement = Math.min(
           Math.floor(Math.random() * 10) + 1,
           remainingDifference
         );
-  
+
         count += randomIncrement;
         $(counterElement).text(count);
-  
+
         if (count >= targetNumber) {
           clearInterval(counterInterval);
         }
       }
-  
+
       var counterInterval;
-  
+
       // Options for the Intersection Observer
       const options = {
         threshold: 0.5, // Trigger when 50% of the element is in view
       };
-  
+
       // Callback function for the Intersection Observer
       function handleIntersection(entries, observer) {
         entries.forEach((entry) => {
@@ -202,10 +202,10 @@ $(document).ready(function () {
           }
         });
       }
-  
+
       // Create the Intersection Observer
       const observer = new IntersectionObserver(handleIntersection, options);
-  
+
       // Observe the target element
       observer.observe(counterElement);
     }
@@ -218,32 +218,32 @@ $(document).ready(function () {
   //------------end----------------
 
   // for projects page
-  if($(".banner-projects").length){
+  if ($(".banner-projects").length) {
     function startCounter(targetNumber, counterElement) {
       let count = 0;
-  
+
       function updateCounter() {
         let remainingDifference = targetNumber - count;
         let randomIncrement = Math.min(
           Math.floor(Math.random() * 10) + 1,
           remainingDifference
         );
-  
+
         count += randomIncrement;
         $(counterElement).text(count);
-  
+
         if (count >= targetNumber) {
           clearInterval(counterInterval);
         }
       }
-  
+
       var counterInterval;
-  
+
       // Options for the Intersection Observer
       const options = {
         threshold: 0.5, // Trigger when 50% of the element is in view
       };
-  
+
       // Callback function for the Intersection Observer
       function handleIntersection(entries, observer) {
         entries.forEach((entry) => {
@@ -254,10 +254,10 @@ $(document).ready(function () {
           }
         });
       }
-  
+
       // Create the Intersection Observer
       const observer = new IntersectionObserver(handleIntersection, options);
-  
+
       // Observe the target element
       observer.observe(counterElement);
     }
@@ -266,10 +266,9 @@ $(document).ready(function () {
       let targetNumber = $(this).data("target");
       startCounter(targetNumber, this);
     });
-    $('.animated-hr').css({
-      'height': '0px'
+    $(".animated-hr").css({
+      height: "0px",
     });
-    
   }
   //------------end----------------
 
@@ -287,20 +286,20 @@ $(document).ready(function () {
 
   //noticable clients carousel
   $(".clients-carousel").owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    dots:false,
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:4
-        },
-        1000:{
-            items:7
-        }
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 4,
+      },
+      1000: {
+        items: 7,
+      },
     },
     loop: true,
     autoplay: true,
@@ -315,20 +314,19 @@ $(document).ready(function () {
 });
 
 //change the image of the expertise rotating ring
-$(document).ready(function() {
-  const imgElement = $('.setting-img img');
+$(document).ready(function () {
+  const imgElement = $(".setting-img img");
 
   function updateImageSrc() {
     const screenWidth = window.innerWidth;
 
     if (screenWidth >= 577) {
-      imgElement.attr('src', 'assets/images/service/setting.svg');
+      imgElement.attr("src", "assets/images/service/setting.svg");
     } else {
-      imgElement.attr('src', 'assets/images/service/setting2.png');
+      imgElement.attr("src", "assets/images/service/setting2.png");
     }
   }
 
   $(window).resize(updateImageSrc);
   updateImageSrc();
 });
-

@@ -1895,6 +1895,24 @@ textarea.form-control,
   font-family: "Nohemi-Regular";
 }
 
+.light-theme-page h4.img-text{
+  color: var(--lightModeText);
+}
+
+.light-theme-page .element-item:hover button{
+  border-color: transparent;
+  color: white;
+}
+
+.light-theme-page p.desc-top{
+  color: rgb(66, 66, 66);
+}
+
+.light-theme-page .cat-right button{
+  color: var(--lightModeText);
+  border-color: var(--lightModeText);
+}
+
 p.cat-date {
   color: gray;
   font-size: 12px;
@@ -1941,7 +1959,13 @@ p.desc-top {
   gap: 10px ;
   align-items: center;
   transition: 500ms;
-  font-family: "Nohemi-Regular";
+  font-family: "Nohemi-Medium";
+}
+
+.light-theme-page .load-more-btn{
+  color:var(--lightModeText);
+  border-color: var(--lightModeText);
+
 }
 
 .loader {
@@ -1958,6 +1982,12 @@ p.desc-top {
 .load-more-btn:hover{
   background: white;
   color: black;
+}
+
+.light-theme-page .load-more-btn:hover{
+  background: rgb(218, 218, 218);
+  color: var(--lightModeText);
+  border-color: rgb(218, 218, 218);
 }
 
 .load-more-btn:hover .loader{
