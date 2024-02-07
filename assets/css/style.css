@@ -1754,7 +1754,7 @@ textarea.form-control,
 
 .animated-hr
 {
-  height: 0px;
+  /* height: 0px; */
 }
 
 .ui-group{
@@ -1827,19 +1827,6 @@ textarea.form-control,
   font-family: "Lato", sans-serif;
 }
 
-@media (max-width: 767px) {
-  .filters button {
-    padding: 5px 10px;
-    margin: 5px;
-  }
-  .grid > li {
-    width: calc(100% - 30px);
-  }
-  .element-item p {
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
 
 
 /* git test */
@@ -1944,7 +1931,7 @@ textarea.form-control,
     max-width: 1480px !important;
   }
   .grid.MoreWidth{
-    max-width: 1480px !important;
+    max-width: 1600px !important;
     background: blue;
   }
 }
@@ -2283,6 +2270,20 @@ textarea.form-control,
   }
   .clients-show .hr-body {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filters button {
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .grid > li {
+    width: calc(100% - 30px);
+  }
+  .element-item p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
