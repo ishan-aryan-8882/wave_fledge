@@ -1368,6 +1368,21 @@ footer {
   text-align: center;
   overflow: hidden;
   /* height: 47.875rem; */
+  transition: 500ms;
+}
+
+.light-theme-page .banner-service {
+  background: white;
+  margin-top: 20px;
+}
+
+.light-theme-page .banner-service h1{
+  color: var(--lightModeText);
+}
+
+.light-theme-page .banner-service .setting .blur-bg{
+  background: #FF901E;
+  opacity: 0.6;
 }
 
 .banner-service p {
@@ -1895,20 +1910,20 @@ textarea.form-control,
   font-family: "Nohemi-Regular";
 }
 
-.light-theme-page h4.img-text{
+.light-theme-page h4.img-text {
   color: var(--lightModeText);
 }
 
-.light-theme-page .element-item:hover button{
+.light-theme-page .element-item:hover button {
   border-color: transparent;
   color: white;
 }
 
-.light-theme-page p.desc-top{
+.light-theme-page p.desc-top {
   color: rgb(66, 66, 66);
 }
 
-.light-theme-page .cat-right button{
+.light-theme-page .cat-right button {
   color: var(--lightModeText);
   border-color: var(--lightModeText);
 }
@@ -1956,16 +1971,15 @@ p.desc-top {
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  gap: 10px ;
+  gap: 10px;
   align-items: center;
   transition: 500ms;
   font-family: "Nohemi-Medium";
 }
 
-.light-theme-page .load-more-btn{
-  color:var(--lightModeText);
+.light-theme-page .load-more-btn {
+  color: var(--lightModeText);
   border-color: var(--lightModeText);
-
 }
 
 .loader {
@@ -1976,21 +1990,20 @@ p.desc-top {
   border-top-color: white;
   animation: rotateFixCenterRev 1s infinite;
   transition: 500ms;
-
 }
 
-.load-more-btn:hover{
+.load-more-btn:hover {
   background: white;
   color: black;
 }
 
-.light-theme-page .load-more-btn:hover{
+.light-theme-page .load-more-btn:hover {
   background: rgb(218, 218, 218);
   color: var(--lightModeText);
   border-color: rgb(218, 218, 218);
 }
 
-.load-more-btn:hover .loader{
+.load-more-btn:hover .loader {
   border-top-color: rgb(27, 27, 27);
 }
 
