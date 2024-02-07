@@ -57,6 +57,7 @@
   --lightModeText: #6c757d;
   --hoverGold: #df7e36;
   --footerColorBg: #111112;
+  --goldText:rgb(255, 152, 56);
 }
 
 li {
@@ -1802,7 +1803,7 @@ textarea.form-control,
   border: none;
 }
 
-.light-theme-page .filters button{
+.light-theme-page .filters button {
   background: white;
   color: var(--lightModeText);
   border: 1px solid var(--lightModeText);
@@ -1812,7 +1813,6 @@ textarea.form-control,
   color: white !important;
   background: var(--lightModeText) !important;
 }
-
 
 .grid.MoreWidth {
   min-width: 100%;
@@ -2030,6 +2030,96 @@ p.desc-top {
 .light-theme-page .banner-circle-animation svg {
   fill: #ff7c01;
 }
+
+/* insights page starts here */
+.blog-scrollable {
+  margin: 100px 0;
+  position: relative;
+}
+
+.sticky-blog-card {
+  max-width: 458px;
+  background: #131313;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 3rem;
+  position: sticky;
+  top: 65px;
+}
+
+.sticky-blog-card h1,
+.sticky-blog-card h5,
+.sticky-blog-card h6,
+.sticky-blog-card p {
+  color: white;
+}
+
+.sticky-blog-card h1 {
+  font-size: 84px;
+  line-height: 100px;
+  letter-spacing: 0.7px;
+  margin-bottom: 10.5px;
+  font-family: "Nohemi-Medium";
+}
+
+.sticky-blog-card h6{
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.7px;
+  margin-bottom: 63px;
+  font-family: "Nohemi-Regular";
+}
+
+.sticky-blog-card h5{
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.7px;
+  margin-bottom: 37px;
+  font-family: "Nohemi-Regular";
+}
+
+.sticky-blog-card h5 span{
+  color: RGB(255, 152, 56);
+}
+
+.sticky-blog-card p{
+  color: gray;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Nohemi-Regular";
+  letter-spacing: 0.7px;
+  /* border: 2px solid; */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky-blog-card p::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: gray;
+  height: 1.5px;
+  left: 0;
+  top: 41%;
+  width: 45%;
+
+}
+
+.sticky-blog-card p::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: gray;
+  height: 1.5px;
+  left: 54.5%;
+  top: 41%;
+  width: 45%;
+}
+
 /* git test */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
