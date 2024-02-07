@@ -1873,7 +1873,7 @@ textarea.form-control,
 .grid.MoreWidth .element-item:first-child .img-text::after {
   content: "new!";
   position: absolute;
-  color: var(--hoverGold);
+  color: RGB(255, 152, 56);
   font-size: 15px;
   top: 100%;
   left: 0;
