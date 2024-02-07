@@ -2528,7 +2528,7 @@ p.desc-top {
     background: var(--hoverGold);
   }
   .banner-service .setting img {
-    opacity: 0.1;
+    opacity: 0.8;
     scale: 1.5;
   }
 }
