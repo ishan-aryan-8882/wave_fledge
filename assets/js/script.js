@@ -267,8 +267,7 @@ $(document).ready(function () {
       startCounter(targetNumber, this);
     });
     $('.animated-hr').css({
-      'height': '0px',
-      'opacity': '0.6'
+      'height': '0px'
     });
     
   }
