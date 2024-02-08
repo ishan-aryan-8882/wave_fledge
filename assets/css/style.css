@@ -2526,72 +2526,110 @@ a.btn-map:hover {
   color: var(--bgColor);
 }
 
-.light-theme-page h1.drop-line{
+.light-theme-page h1.drop-line {
   color: var(--lightModeText);
 }
 
 .light-theme-page .dog-poster,
 .light-theme-page .start-project,
-.light-theme-page .office{
+.light-theme-page .office {
   background: white;
   transform: 500ms;
 }
 
-.light-theme-page .start-project a{
+.light-theme-page .start-project a {
   color: var(--hoverGold);
 }
 
 .light-theme-page .office a.uselessno,
-.light-theme-page .office h4{
+.light-theme-page .office h4 {
   color: var(--goldText);
 }
 
-.light-theme-page a.btn-map{
+.light-theme-page a.btn-map {
   border-color: var(--lightModeText);
   color: var(--lightModeText);
 }
 
-.light-theme-page a.btn-map:hover{
+.light-theme-page a.btn-map:hover {
   color: white;
   background: var(--goldText);
   border-color: var(--goldText);
 }
 
-.light-theme-page .contactExpertise{
+.light-theme-page .contactExpertise {
   background: rgb(221, 221, 221);
   transition: 500ms;
 }
 
-.light-theme-page .contact-header{
+.light-theme-page .contact-header {
   background: white;
 }
 
-.light-theme-page .contact-header h1{
+.light-theme-page .contact-header h1 {
   color: var(--lightModeText);
   transition: 500ms;
 }
 
-.light-theme-page .contact-form .form-group{
+.light-theme-page .contact-form .form-group {
   background: white;
 }
 
-.light-theme-page .contact-form .form-group label{
+.light-theme-page .contact-form .form-group label {
   color: rgb(68, 68, 68);
 }
 
-.light-theme-page .custom_submit img{
+.light-theme-page .custom_submit img {
   background: var(--lightModeText);
   padding: 2px;
   border-radius: 10px;
 }
 
-.light-theme-page .custom_submit span{
+.light-theme-page .custom_submit span {
   color: var(--lightModeText);
 }
 
-.light-theme-page .contact-header_right svg textPath{
+.light-theme-page .contact-header_right svg textPath {
   fill: var(--goldText);
   font-family: "Nohemi-Regular";
+}
+
+.light-theme-page .home-carousel-absolute-text-box a {
+  border-color: RGB(62, 62, 62) !important;
+}
+
+.light-theme-page .bg-black{
+  background: var(--lightModeText) !important;
+}
+
+.light-theme-page .support-content {
+  background: var(--lightModeText);
+}
+
+.light-theme-page .support-content p{
+  color: rgb(201, 200, 200);
+}
+
+.light-theme-page .support-inline-left{
+  background: white;
+}
+
+.light-theme-page .support-inline-left h4{
+  color: var(--lightModeText);
+}
+
+.light-theme-page .support-inline-right .btn-submit:hover{
+  background: white !important;
+}
+
+.light-theme-page .support-inline-right .btn-submit:hover img{
+  background: var(--lightModeText);
+  padding: 1px;
+  border-radius: 10px;
+}
+
+.light-theme-page .support-inline-right .btn-submit:hover span{
+  color: var(--lightModeText);
 }
 
 /* git test */
@@ -2816,7 +2854,9 @@ a.btn-map:hover {
     font-size: 18px;
   }
 
-  .office p , .office h4 , a.uselessno{
+  .office p,
+  .office h4,
+  a.uselessno {
     font-size: 20px;
     line-height: 35px;
     font-family: "Nohemi-Regular";
@@ -2891,10 +2931,10 @@ a.btn-map:hover {
 }
 
 @media (max-width: 992px) {
-  h1.drop-line span{
+  h1.drop-line span {
     display: none;
   }
-  .dog-poster img.vibe{
+  .dog-poster img.vibe {
     left: 50%;
     transform: translateX(-50%) rotate(15deg);
   }
@@ -3140,7 +3180,7 @@ a.btn-map:hover {
 }
 
 @media (max-width: 576px) {
-  h1.drop-line{
+  h1.drop-line {
     font-size: 80px;
     line-height: 95px;
   }
