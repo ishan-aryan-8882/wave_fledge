@@ -58,7 +58,7 @@
   --hoverGold: #df7e36;
   --footerColorBg: #111112;
   --goldText: rgb(255, 152, 56);
-  --actLight:#48484E;
+  --actLight: #48484e;
 }
 
 li {
@@ -2625,8 +2625,8 @@ a.btn-map:hover {
   color: var(--lightModeText);
 }
 
-.light-theme-page .support-content h3{
-  color:  #48484E;
+.light-theme-page .support-content h3 {
+  color: #48484e;
 }
 
 .light-theme-page .support-inline-left {
@@ -2637,11 +2637,11 @@ a.btn-map:hover {
   color: var(--lightModeText);
 }
 
-.light-theme-page .arrow-prior-box{
+.light-theme-page .arrow-prior-box {
   background: rgb(235, 234, 234);
 }
 
-.light-theme-page .arrow-prior-box:hover{
+.light-theme-page .arrow-prior-box:hover {
   background: var(--goldText);
   color: white;
 }
@@ -2660,8 +2660,12 @@ a.btn-map:hover {
   color: var(--lightModeText);
 }
 
-.light-theme-page .footer-curve{
-  background: #E6E3E3 !important;
+.light-theme-page .footer-curve {
+  background: #e6e3e3 !important;
+}
+
+.light-theme-page a.arrow-prior-box {
+  color: var(--actLight) !important;
 }
 
 .light-theme-page .lang-sh button {
@@ -2679,27 +2683,25 @@ a.btn-map:hover {
   background: rgba(128, 128, 128, 0.98);
 }
 
-.light-theme-page .service-main-cont
-{
+.light-theme-page .service-main-cont {
   background: #fff;
 }
 
-.light-theme-page .service-main-cont h6{
+.light-theme-page .service-main-cont h6 {
   color: var(--lightModeText);
   /* display: none; */
 }
 
-.light-theme-page .cst-btn{
+.light-theme-page .cst-btn {
   background: #2b2b2b;
   color: white;
 }
-.light-theme-page .cst-btn:hover{
+.light-theme-page .cst-btn:hover {
   background: var(--goldText);
   color: white;
 }
 
-.light-theme-page h2.whiteColorChild
-{
+.light-theme-page h2.whiteColorChild {
   color: var(--lightModeText);
   transition: all 1s ease-in-out;
 }
@@ -3475,7 +3477,7 @@ a.btn-map:hover {
   }
 }
 
-@media (max-width:451px) {
+@media (max-width: 451px) {
   .main-navigation ul li a {
     font-size: 12px;
     padding: 5px 8px;
