@@ -2135,12 +2135,18 @@ p.desc-top {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: rgb(85, 85, 85);
+  color: rgb(26, 25, 25);
   border-radius: 20px;
   background: white;
   font-size: 14px;
   letter-spacing: 1.5px;
   font-family: "Nohemi-SemiBold";
+  transition: 500ms;
+}
+
+.sticky-blog-card a:hover{
+  background: var(--goldText);
+  color: white;
 }
 
 .options-for-stack{
@@ -2167,11 +2173,26 @@ p.desc-top {
   width: 100%;
 }
 
+.insights-item:hover .insightsExplore{
+  background: var(--goldText);
+  color: white;
+}
+
+.insights-item:hover .insights-item-img img{
+  scale: 1.1;
+}
+
 .insights-item-img{
-  /* width: 21rem;
-  height: 21rem; */
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.insights-item-img img{
+  width: 100%;
+  height: 100%;
+  transition: 500ms;
 }
 
 .insights-item-content p{
@@ -2181,13 +2202,15 @@ p.desc-top {
   margin-bottom: 37px;
   font-family: "Nohemi-Regular";
   letter-spacing: 0.7px;
-
 }
 
 .insights-item-content ul{
   padding-left: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 10px ;
+  /* border: 2px solid; */
+  flex-wrap: wrap;
 }
 
 .insights-item-content ul li a{
@@ -2226,10 +2249,12 @@ p.desc-top {
   width: fit-content;
   border-radius: 20px;
   display: block;
+  transition: 500ms;
 }
 
 .insights-item-content .user{
   gap: 10px;
+  align-items: center;
 }
 
 .insights-item-content .user p{
@@ -2237,8 +2262,22 @@ p.desc-top {
   line-height: 22px;
   font-family: "Nohemi-Regular";
   letter-spacing: 0.7px;
+  position: relative;
+  color: white;
 }
 
+
+.insights-item-content .user p::after{
+  content: 'CEO';
+  position: absolute;
+  inset: 0;
+  top: 23px;
+  color: gray;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 0.7px;
+  font-family: "Nohemi-Regular";
+}
 
 /* git test */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
