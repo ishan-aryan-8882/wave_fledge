@@ -2338,6 +2338,46 @@ p.desc-top {
   border: 2px solid transparent;
 }
 
+.load-more-btn-insights {
+  position: absolute;
+  bottom: -20px;
+  left: 40%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+  font-family: "Nohemi-Regular";
+  letter-spacing: 0.7px;
+  font-size: 14px;
+  width: fit-content !important;
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  padding: 13px 10px 10px;
+  border-radius: 12px;
+  margin: 0 auto;
+  transition: 500ms;
+}
+
+
+.load-more-btn-insights {
+  color: var(--lightModeText);
+  border-color: var(--lightModeText);
+}
+
+.load-more-btn-insights:hover {
+  background: white;
+  color: black;
+}
+
+.light-theme-page .load-more-btn-insights:hover {
+  background: rgb(218, 218, 218);
+  color: var(--lightModeText);
+  border-color: rgb(218, 218, 218);
+}
+
+.load-more-btn-insights:hover .loader {
+  border-top-color: rgb(27, 27, 27);
+}
+
 /* git test */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
