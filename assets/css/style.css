@@ -58,6 +58,7 @@
   --hoverGold: #df7e36;
   --footerColorBg: #111112;
   --goldText: rgb(255, 152, 56);
+  --actLight:#48484E;
 }
 
 li {
@@ -922,6 +923,10 @@ span.circle {
 
 h3.whiteColorWow {
   color: white !important;
+  transition: all 1s ease-in-out;
+}
+.light-theme-page h3.whiteColorWow {
+  color: var(--lightModeText) !important;
   transition: all 1s ease-in-out;
 }
 
@@ -2609,15 +2614,19 @@ a.btn-map:hover {
 }
 
 .light-theme-page .bg-black {
-  background: var(--lightModeText) !important;
+  background: white !important;
 }
 
 .light-theme-page .support-content {
-  background: var(--lightModeText);
+  background: white;
 }
 
 .light-theme-page .support-content p {
-  color: rgb(201, 200, 200);
+  color: var(--lightModeText);
+}
+
+.light-theme-page .support-content h3{
+  color:  #48484E;
 }
 
 .light-theme-page .support-inline-left {
@@ -2626,6 +2635,15 @@ a.btn-map:hover {
 
 .light-theme-page .support-inline-left h4 {
   color: var(--lightModeText);
+}
+
+.light-theme-page .arrow-prior-box{
+  background: rgb(235, 234, 234);
+}
+
+.light-theme-page .arrow-prior-box:hover{
+  background: var(--goldText);
+  color: white;
 }
 
 .light-theme-page .support-inline-right .btn-submit:hover {
@@ -2655,6 +2673,31 @@ a.btn-map:hover {
 
 .light-theme-page .hr-body {
   background: rgba(128, 128, 128, 0.98);
+}
+
+.light-theme-page .service-main-cont
+{
+  background: #fff;
+}
+
+.light-theme-page .service-main-cont h6{
+  color: var(--lightModeText);
+  /* display: none; */
+}
+
+.light-theme-page .cst-btn{
+  background: #2b2b2b;
+  color: white;
+}
+.light-theme-page .cst-btn:hover{
+  background: var(--goldText);
+  color: white;
+}
+
+.light-theme-page h2.whiteColorChild
+{
+  color: var(--lightModeText);
+  transition: all 1s ease-in-out;
 }
 
 /* git test */
