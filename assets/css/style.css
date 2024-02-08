@@ -2288,6 +2288,56 @@ p.desc-top {
   font-family: "Nohemi-Regular";
 }
 
+.light-theme-page .insights-item-content h3{
+  color: rgb(83, 83, 83);
+}
+
+.light-theme-page  .insightsExplore{
+  color: var(--lightModeText);
+  border-color: var(--lightModeText);
+}
+
+.light-theme-page  .insights-item:hover .insightsExplore{
+  color: white;
+  border-color: var(--goldText);
+  transition: 300ms;
+}
+
+.light-theme-page .insights-item-content .user p{
+  color: rgb(34, 34, 34);
+}
+
+.light-theme-page .insights-item-content ul li a{
+  background: white;
+  color: var(--lightModeText);
+  border: 1px solid var(--lightModeText);
+}
+.light-theme-page .sticky-blog-card{
+  background: white;
+}
+
+.light-theme-page .sticky-blog-card h1{
+  color: rgb(83, 83, 83);
+}
+.light-theme-page .sticky-blog-card h5{
+  color: var(--lightModeText);
+}
+.light-theme-page .sticky-blog-card h6{
+  color: var(--lightModeText);
+}
+
+.light-theme-page .sticky-blog-card a{
+  color: var(--lightModeText);
+  border: 2px solid #6c757d4b;
+  transition: 500ms;
+}
+
+.light-theme-page .sticky-blog-card a:hover{
+  /* color: rgb(83, 83, 83); */
+  color: white;
+  border: 2px solid transparent;
+}
+
 /* git test */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* animations */
