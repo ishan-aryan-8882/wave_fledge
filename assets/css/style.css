@@ -2366,13 +2366,22 @@ p.desc-top {
 }
 
 .light-theme-page .load-more-btn-insights:hover {
-  background: rgb(218, 218, 218);
-  color: rgb(59, 59, 59);
+  background: var(--bgColor);
+  color: rgb(255, 255, 255);
   border-color: rgb(218, 218, 218);
 }
 
 .load-more-btn-insights:hover .loader {
   border-top-color: rgb(27, 27, 27);
+}
+
+
+.light-theme-page .load-more-btn-insights .loader{
+  border-top-color:var(--bgColor);
+}
+
+.light-theme-page .load-more-btn-insights:hover .loader{
+  border-top-color:white;
 }
 
 .insights-item.element-item{
