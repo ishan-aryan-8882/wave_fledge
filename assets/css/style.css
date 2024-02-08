@@ -57,7 +57,7 @@
   --lightModeText: #6c757d;
   --hoverGold: #df7e36;
   --footerColorBg: #111112;
-  --goldText:rgb(255, 152, 56);
+  --goldText: rgb(255, 152, 56);
 }
 
 li {
@@ -84,7 +84,7 @@ a {
   background: white !important;
 }
 
-.removepadding{
+.removepadding {
   padding: 0px !important;
 }
 
@@ -2048,7 +2048,7 @@ p.desc-top {
   padding: 3rem;
   position: sticky;
   top: 75px;
-  max-width: 458px;
+  /* max-width: 458px; */
 }
 
 .sticky-blog-card h1,
@@ -2060,19 +2060,19 @@ p.desc-top {
 
 .sticky-blog-card h1 {
   font-size: 96px;
-  line-height: 100px;
+  line-height: 115px;
   letter-spacing: 0.7px;
   margin-bottom: 10.5px;
   font-family: "Nohemi-Medium";
 }
 
-.sticky-blog-card h1 small{
+.sticky-blog-card h1 small {
   font-family: "Nohemi-Regular";
   font-size: 84px;
   display: block;
 }
 
-.sticky-blog-card h6{
+.sticky-blog-card h6 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.7px;
@@ -2080,7 +2080,7 @@ p.desc-top {
   font-family: "Nohemi-Regular";
 }
 
-.sticky-blog-card h5{
+.sticky-blog-card h5 {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.7px;
@@ -2088,11 +2088,11 @@ p.desc-top {
   font-family: "Nohemi-Regular";
 }
 
-.sticky-blog-card h5 span{
+.sticky-blog-card h5 span {
   color: RGB(255, 152, 56);
 }
 
-.sticky-blog-card p{
+.sticky-blog-card p {
   color: gray;
   font-size: 14px;
   line-height: 20px;
@@ -2107,8 +2107,8 @@ p.desc-top {
   align-items: center;
 }
 
-.sticky-blog-card p::before{
-  content: '';
+.sticky-blog-card p::before {
+  content: "";
   position: absolute;
   inset: 0;
   background: gray;
@@ -2118,8 +2118,8 @@ p.desc-top {
   width: 45%;
 }
 
-.sticky-blog-card p::after{
-  content: '';
+.sticky-blog-card p::after {
+  content: "";
   position: absolute;
   inset: 0;
   background: gray;
@@ -2129,7 +2129,7 @@ p.desc-top {
   width: 45%;
 }
 
-.sticky-blog-card a{
+.sticky-blog-card a {
   padding: 28px 35px 25px;
   display: flex;
   justify-content: center;
@@ -2144,16 +2144,16 @@ p.desc-top {
   transition: 500ms;
 }
 
-.sticky-blog-card a:hover{
+.sticky-blog-card a:hover {
   background: var(--goldText);
   color: white;
 }
 
-.options-for-stack{
+.options-for-stack {
   /* background: red; */
 }
 
-.options-for-stack p{
+.options-for-stack p {
   color: gray;
   font-size: 16px;
   line-height: 22px;
@@ -2164,38 +2164,49 @@ p.desc-top {
   margin-right: 15px;
 }
 
-#insights-filter .animated-hr .col-12{
+#insights-filter .animated-hr .col-12 {
   height: 0px;
 }
 
-.insights-item{
+.insights-item {
   margin: 50px 0;
   width: 100%;
 }
 
-.insights-item:hover .insightsExplore{
+.insights-item:hover .insightsExplore {
   background: var(--goldText);
   color: white;
 }
 
-.insights-item:hover .insights-item-img img{
+.insights-item:hover .insights-item-img img {
   scale: 1.1;
 }
 
-.insights-item-img{
+.insights-item-img {
   width: 100%;
   height: 100%;
+  height: auto;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 20px;
+  /* border-radius: 36px; */
+  /* border: 2px solid blue; */
+  margin: auto 0;
+  display: inline-block;
+  aspect-ratio: 1 / 1;
 }
 
-.insights-item-img img{
+.insights-item-img img {
   width: 100%;
   height: 100%;
   transition: 500ms;
+  object-fit: cover;
 }
 
-.insights-item-content p{
+.col-lg-5 {
+  /* background: red; */
+}
+
+.insights-item-content p {
   color: gray;
   font-size: 12px;
   line-height: 17px;
@@ -2204,16 +2215,15 @@ p.desc-top {
   letter-spacing: 0.7px;
 }
 
-.insights-item-content ul{
+.insights-item-content ul {
   padding-left: 0px;
   display: flex;
   justify-content: start;
-  gap: 10px ;
-  /* border: 2px solid; */
+  gap: 10px;
   flex-wrap: wrap;
 }
 
-.insights-item-content ul li a{
+.insights-item-content ul li a {
   font-family: "Nohemi-Regular";
   font-size: 14px;
   line-height: 20px;
@@ -2229,7 +2239,7 @@ p.desc-top {
   font-size: 0.875rem;
 }
 
-.insights-item-content h3{
+.insights-item-content h3 {
   font-family: "Nohemi-Regular";
   font-size: 32px;
   line-height: 39px;
@@ -2239,12 +2249,12 @@ p.desc-top {
   margin-top: 20px;
 }
 
-.insightsExplore{
+.insightsExplore {
   color: white;
   font-family: "Nohemi-Medium";
   font-size: 12px;
   margin-bottom: 32px;
-  padding:17px 40px 13px;
+  padding: 17px 40px 13px;
   border: 1px solid rgba(255, 255, 255, 0.192);
   width: fit-content;
   border-radius: 20px;
@@ -2252,12 +2262,12 @@ p.desc-top {
   transition: 500ms;
 }
 
-.insights-item-content .user{
+.insights-item-content .user {
   gap: 10px;
   align-items: center;
 }
 
-.insights-item-content .user p{
+.insights-item-content .user p {
   font-size: 16px;
   line-height: 22px;
   font-family: "Nohemi-Regular";
@@ -2266,9 +2276,8 @@ p.desc-top {
   color: white;
 }
 
-
-.insights-item-content .user p::after{
-  content: 'CEO';
+.insights-item-content .user p::after {
+  content: "CEO";
   position: absolute;
   inset: 0;
   top: 23px;
@@ -2395,6 +2404,9 @@ p.desc-top {
 }
 
 @media (max-width: 1401px) {
+  .sticky-blog-card {
+    padding: 30px 22px;
+  }
   h2.arrow-h2 {
     font-size: 67px;
     line-height: 72px;
@@ -2408,6 +2420,31 @@ p.desc-top {
 }
 
 @media (max-width: 1201px) {
+  .sticky-blog-card {
+    padding: 25px 20px;
+  }
+  .sticky-blog-card h6 {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 50px;
+  }
+  .sticky-blog-card h5 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .sticky-blog-card .own-write {
+    font-size: 11px;
+    gap: 10px;
+  }
+  .sticky-blog-card h1 {
+    font-size: 86px;
+    line-height: 90px;
+  }
+  .sticky-blog-card h1 small {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
   .filters p {
     width: 100%;
     margin-bottom: 20px;
@@ -2534,6 +2571,19 @@ p.desc-top {
 }
 
 @media (max-width: 992px) {
+  .insights-item-content p{
+    margin-bottom: 20px;
+  }
+  .insights-item-img {
+    border-radius: 36px;
+    margin-bottom: 20px;
+  }
+  .sticky-blog-card h1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .cat-img {
     width: 100%;
     height: 100%;
@@ -2763,6 +2813,14 @@ p.desc-top {
 }
 
 @media (max-width: 576px) {
+  .insights-item-content h3 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    letter-spacing: 0.7px;
+    color: white;
+    margin-top: 20px;
+  }
   .about-hs h3 {
     font-size: 30px;
     margin-bottom: 10px;
