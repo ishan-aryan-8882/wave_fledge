@@ -104,7 +104,7 @@ a.active-main-nav:hover {
 }
 
 .light-theme-page {
-  background: #E6E3E3 !important;
+  background: #e6e3e3 !important;
 }
 
 .dn-class {
@@ -719,7 +719,11 @@ span.circle {
   width: 280px;
   height: 280px;
 
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 41.71%, rgba(0, 0, 0, 0.05) 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0) 41.71%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
   z-index: 1;
 }
 .circle_bottom {
@@ -734,7 +738,11 @@ span.circle {
 .light-theme-page .circle_bottom {
   width: 476px;
   height: 476px;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 41.71%, rgba(0, 0, 0, 0.05) 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0) 41.71%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
 }
 
 .bulb-wrapper:hover .circle_top {
@@ -759,13 +767,13 @@ span.circle {
   box-shadow: 0px 0px 60px #e99b53;
 }
 
-.light-theme-page .bulb-wrapper:hover .circle_center{
+.light-theme-page .bulb-wrapper:hover .circle_center {
   background: none;
 }
-.light-theme-page .bulb-wrapper:hover .circle_bottom{
+.light-theme-page .bulb-wrapper:hover .circle_bottom {
   background: none;
 }
-.light-theme-page .bulb-wrapper:hover .circle_top{
+.light-theme-page .bulb-wrapper:hover .circle_top {
   background: rgb(189, 188, 188) !important;
 }
 
@@ -2600,7 +2608,7 @@ a.btn-map:hover {
   border-color: RGB(62, 62, 62) !important;
 }
 
-.light-theme-page .bg-black{
+.light-theme-page .bg-black {
   background: var(--lightModeText) !important;
 }
 
@@ -2608,46 +2616,44 @@ a.btn-map:hover {
   background: var(--lightModeText);
 }
 
-.light-theme-page .support-content p{
+.light-theme-page .support-content p {
   color: rgb(201, 200, 200);
 }
 
-.light-theme-page .support-inline-left{
+.light-theme-page .support-inline-left {
   background: white;
 }
 
-.light-theme-page .support-inline-left h4{
+.light-theme-page .support-inline-left h4 {
   color: var(--lightModeText);
 }
 
-.light-theme-page .support-inline-right .btn-submit:hover{
+.light-theme-page .support-inline-right .btn-submit:hover {
   background: white !important;
 }
 
-.light-theme-page .support-inline-right .btn-submit:hover img{
+.light-theme-page .support-inline-right .btn-submit:hover img {
   background: var(--lightModeText);
   padding: 1px;
   border-radius: 5px;
 }
 
-.light-theme-page .support-inline-right .btn-submit:hover span{
+.light-theme-page .support-inline-right .btn-submit:hover span {
   color: var(--lightModeText);
 }
 
-.light-theme-page .lang-sh button
-{
+.light-theme-page .lang-sh button {
   color: rgb(61, 61, 61) !important;
 }
 
-.light-theme-page .project-boxes
-{
+.light-theme-page .project-boxes {
   background: #ffffff;
   padding: 10px 12px;
   border-radius: 31px;
   margin-bottom: 20px;
 }
 
-.light-theme-page .hr-body{
+.light-theme-page .hr-body {
   background: rgba(128, 128, 128, 0.98);
 }
 
@@ -3253,7 +3259,7 @@ a.btn-map:hover {
   }
 }
 
-@media (min-width: 500px) and (max-width: 701px) {
+@media (max-width: 650px) {
   .arrow-progress-tracker {
     bottom: 90px;
     right: 45%;
@@ -3262,6 +3268,9 @@ a.btn-map:hover {
 }
 
 @media (max-width: 500px) {
+  .main-navigation ul {
+    gap: 2px;
+  }
   .filters button {
     font-size: 12px;
     letter-spacing: 0.8px;
@@ -3330,7 +3339,6 @@ a.btn-map:hover {
     top: 155%;
   }
   .main-navigation {
-    display: none;
   }
   ul.design-layout {
     scale: 0.6;
