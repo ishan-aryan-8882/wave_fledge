@@ -2625,11 +2625,16 @@ a.btn-map:hover {
 .light-theme-page .support-inline-right .btn-submit:hover img{
   background: var(--lightModeText);
   padding: 1px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .light-theme-page .support-inline-right .btn-submit:hover span{
   color: var(--lightModeText);
+}
+
+.light-theme-page .lang-sh button
+{
+  color: rgb(61, 61, 61) !important;
 }
 
 /* git test */
