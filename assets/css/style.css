@@ -3428,6 +3428,13 @@ a.btn-map:hover {
   }
 }
 
+@media (max-width:451px) {
+  .main-navigation ul li a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
 @media (max-width: 443px) {
   .clients-show h4 {
     font-size: 20px;
