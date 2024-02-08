@@ -2367,7 +2367,7 @@ p.desc-top {
 
 .light-theme-page .load-more-btn-insights:hover {
   background: rgb(218, 218, 218);
-  color: var(--lightModeText);
+  color: rgb(59, 59, 59);
   border-color: rgb(218, 218, 218);
 }
 
