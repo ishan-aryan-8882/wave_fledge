@@ -2526,7 +2526,73 @@ a.btn-map:hover {
   color: var(--bgColor);
 }
 
+.light-theme-page h1.drop-line{
+  color: var(--lightModeText);
+}
 
+.light-theme-page .dog-poster,
+.light-theme-page .start-project,
+.light-theme-page .office{
+  background: white;
+  transform: 500ms;
+}
+
+.light-theme-page .start-project a{
+  color: var(--hoverGold);
+}
+
+.light-theme-page .office a.uselessno,
+.light-theme-page .office h4{
+  color: var(--goldText);
+}
+
+.light-theme-page a.btn-map{
+  border-color: var(--lightModeText);
+  color: var(--lightModeText);
+}
+
+.light-theme-page a.btn-map:hover{
+  color: white;
+  background: var(--goldText);
+  border-color: var(--goldText);
+}
+
+.light-theme-page .contactExpertise{
+  background: rgb(221, 221, 221);
+  transition: 500ms;
+}
+
+.light-theme-page .contact-header{
+  background: white;
+}
+
+.light-theme-page .contact-header h1{
+  color: var(--lightModeText);
+  transition: 500ms;
+}
+
+.light-theme-page .contact-form .form-group{
+  background: white;
+}
+
+.light-theme-page .contact-form .form-group label{
+  color: rgb(68, 68, 68);
+}
+
+.light-theme-page .custom_submit img{
+  background: var(--lightModeText);
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.light-theme-page .custom_submit span{
+  color: var(--lightModeText);
+}
+
+.light-theme-page .contact-header_right svg textPath{
+  fill: var(--goldText);
+  font-family: "Nohemi-Regular";
+}
 
 /* git test */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
