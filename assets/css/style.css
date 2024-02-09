@@ -2396,15 +2396,16 @@ p.desc-top {
 }
 
 .light-theme-page .sticky-blog-card a {
-  color: var(--lightModeText);
-  border: 2px solid #6c757d4b;
+  color: white;
+  border: 2px solid #2A2A2C;
+  background: #2A2A2C;
   transition: 500ms;
 }
 
 .light-theme-page .sticky-blog-card a:hover {
-  /* color: rgb(83, 83, 83); */
+  background: var(--goldText);
   color: white;
-  border: 2px solid transparent;
+  border: 2px solid var(--goldText);
 }
 
 .load-more-btn-insights {
