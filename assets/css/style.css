@@ -116,7 +116,7 @@ a.active-main-nav:hover {
   display: block;
 }
 
-.brc{
+.brc {
   border-radius: 10px !important;
 }
 
@@ -1474,7 +1474,7 @@ footer {
 .serviceExpert-image {
   width: 15.125rem;
   height: 15.125rem;
-  min-width: 15.125rem;
+  /* min-width: 15.125rem; */
   background: #242425;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
@@ -1485,7 +1485,7 @@ footer {
   justify-content: center;
 }
 
-.serviceExpert-image img{
+.serviceExpert-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3069,8 +3069,8 @@ a.btn-map:hover {
   h1.drop-line span {
     display: none;
   }
-  .serviceExpert-image{
-    margin: 0 auto;    
+  .serviceExpert-image {
+    margin: 0 auto;
     margin-left: 0px;
   }
   .dog-poster img.vibe {
@@ -3129,7 +3129,7 @@ a.btn-map:hover {
     gap: 0.5rem;
   }
 
-  .meta ul li a{
+  .meta ul li a {
     font-size: 12px;
   }
 
@@ -3168,7 +3168,17 @@ a.btn-map:hover {
   }
 }
 
+@media (min-width: 769px) {
+  .serviceExpert-image {
+    min-width: 15.125rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .serviceExpert-image {
+    height: 8rem;
+    width: 6rem;
+  }
   .banner-main-project ul {
     display: flex;
     flex-wrap: wrap;
@@ -3311,7 +3321,7 @@ a.btn-map:hover {
 }
 
 @media (max-width: 576px) {
-  .service-page-box{
+  .service-page-box {
     padding: 15px;
   }
   h1.drop-line {
