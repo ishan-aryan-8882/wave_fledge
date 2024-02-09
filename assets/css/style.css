@@ -1881,11 +1881,10 @@ textarea.form-control,
   background: rgb(36, 36, 36) !important;
 }
 
- .filters button:not(.is-checked):hover {
+.filters button:not(.is-checked):hover {
   background: gray;
   color: white;
 }
-
 
 #project-filter .grid.MoreWidth {
   min-width: 100%;
@@ -2397,8 +2396,8 @@ p.desc-top {
 
 .light-theme-page .sticky-blog-card a {
   color: white;
-  border: 2px solid #2A2A2C;
-  background: #2A2A2C;
+  border: 2px solid #2a2a2c;
+  background: #2a2a2c;
   transition: 500ms;
 }
 
@@ -2477,6 +2476,12 @@ h1.drop-line span {
   font-family: "Nohemi-Light";
   color: var(--goldText);
   margin-right: 200px;
+  display: flex;
+  align-items: start;
+  width: 5px;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
 }
 
 .dog-poster {
@@ -2909,6 +2914,12 @@ a.btn-map:hover {
 }
 
 @media (max-width: 1201px) {
+  h1.drop-line {
+    justify-content: space-between;
+  }
+  h1.drop-line span {
+    margin-right: 0;
+  }
   .sticky-blog-card {
     padding: 25px 20px;
   }
@@ -3076,8 +3087,24 @@ a.btn-map:hover {
 }
 
 @media (max-width: 992px) {
+  h1.drop-line {
+    /* background: red; */
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    /* background: blue; */
+  }
   h1.drop-line span {
-    display: none;
+    /* display: none; */
+    margin-right: 0;
+    /* background: red; */
+    /* font-size: 500px; */
+    display: flex;
+    align-items: start;
+    width: 5px;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
   }
   .serviceExpert-image {
     margin: 0 auto;
@@ -3339,8 +3366,7 @@ a.btn-map:hover {
 }
 
 @media (max-width: 576px) {
-  .service
-  .service-page-box {
+  .service .service-page-box {
     padding: 15px;
   }
   h1.drop-line {
@@ -3400,6 +3426,12 @@ a.btn-map:hover {
     bottom: 90px;
     right: 45%;
     transition: bottom 500ms, right 500ms;
+  }
+}
+
+@media (min-width:993px) {
+  h1.drop-line span{
+    font-size: 500px;
   }
 }
 
