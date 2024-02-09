@@ -1873,13 +1873,19 @@ textarea.form-control,
 .light-theme-page .filters button {
   background: white;
   color: var(--lightModeText);
-  border: 1px solid var(--lightModeText);
+  border: 1px solid white;
 }
 
 .light-theme-page .filters button.is-checked {
   color: white !important;
-  background: var(--lightModeText) !important;
+  background: rgb(36, 36, 36) !important;
 }
+
+ .filters button:not(.is-checked):hover {
+  background: gray;
+  color: white;
+}
+
 
 #project-filter .grid.MoreWidth {
   min-width: 100%;
@@ -1991,7 +1997,7 @@ textarea.form-control,
 }
 
 .light-theme-page h4.img-text {
-  color: var(--lightModeText);
+  color: var(--lightModeText) !important;
 }
 
 .light-theme-page #project-filter .element-item:hover button {
@@ -3332,6 +3338,7 @@ a.btn-map:hover {
 }
 
 @media (max-width: 576px) {
+  .service
   .service-page-box {
     padding: 15px;
   }
@@ -3372,7 +3379,7 @@ a.btn-map:hover {
   .banner-service h1 {
     font-size: 65px !important;
     line-height: 70px !important;
-    z-index: 111;
+    /* z-index: 111; */
     position: relative;
   }
   .banner-service {
