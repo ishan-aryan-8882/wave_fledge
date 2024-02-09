@@ -1467,7 +1467,7 @@ footer {
   display: flex;
   gap: 4.5rem;
   margin-bottom: 70px;
-  justify-content: safe;
+  justify-content: start;
   align-items: start;
 }
 
@@ -3069,6 +3069,10 @@ a.btn-map:hover {
   h1.drop-line span {
     display: none;
   }
+  .serviceExpert-image{
+    margin: 0 auto;    
+    margin-left: 0px;
+  }
   .dog-poster img.vibe {
     left: 50%;
     transform: translateX(-50%) rotate(15deg);
@@ -3094,9 +3098,6 @@ a.btn-map:hover {
   .cat-left {
     margin-bottom: 20px;
   }
-  /* .element-item .animated-hr{
-    margin-bottom: 0px;
-  } */
   .contact-header_left h1 {
     font-size: 70px;
   }
@@ -3113,30 +3114,25 @@ a.btn-map:hover {
   .service-page-box {
     flex-direction: column;
     align-items: center;
-    text-align: center;
     /* background: blue; */
   }
   .ser-link {
     width: fit-content;
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 30px;
   }
   .meta ul {
     display: flex;
     /* background: red; */
     width: 100%;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: start;
+    gap: 0.5rem;
   }
-  .meta ul li {
-    /* background: red; */
-    width: 40%;
-    min-width: fit-content;
+
+  .meta ul li a{
+    font-size: 12px;
   }
-  .meta ul li a {
-    width: 100%;
-    padding: 30px 24px;
-  }
+
   .banner-service {
     padding: 5rem 0 15rem;
   }
@@ -3216,15 +3212,15 @@ a.btn-map:hover {
     text-align: justify;
   }
   .meta ul {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
   }
   .meta ul li {
     /* background: red; */
-    width: 50%;
+    /* width: 50%; */
   }
   .meta ul li a {
-    padding: 24px 24px;
+    /* padding: 24px 24px; */
   }
   .banner-service .setting {
     bottom: -27%;
@@ -3315,6 +3311,9 @@ a.btn-map:hover {
 }
 
 @media (max-width: 576px) {
+  .service-page-box{
+    padding: 15px;
+  }
   h1.drop-line {
     font-size: 80px;
     line-height: 95px;
@@ -3412,7 +3411,7 @@ a.btn-map:hover {
     margin: auto;
   }
   .meta ul li {
-    width: 70%;
+    /* width: 70%; */
   }
   .serviceExpert-content a h3 {
     font-size: 25px;
