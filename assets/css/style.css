@@ -54,7 +54,8 @@
 :root {
   --bgColor: #1c1c1d;
   --borderRadius: 8px;
-  --lightModeText: #6c757d;
+  --lightModeText: 
+  RGB(72, 72, 78);
   --hoverGold: #df7e36;
   --footerColorBg: #111112;
   --goldText: rgb(255, 152, 56);
@@ -1474,6 +1475,10 @@ footer {
   padding: 5rem;
 }
 
+.light-theme-page .serviceExpert-image{
+  background: white;
+}
+
 .serviceExpert-content a h3 {
   color: white;
   font-size: 48px;
@@ -1670,7 +1675,8 @@ textarea.form-control,
 }
 
 .light-theme-page .meta a {
-  background: var(--lightModeText);
+  background: white;
+  color: var(--lightModeText);
 }
 
 /* projects page starts here */
@@ -2573,12 +2579,12 @@ a.btn-map:hover {
 }
 
 .light-theme-page .contactExpertise {
-  background: rgb(221, 221, 221);
+  background: white;
   transition: 500ms;
 }
 
 .light-theme-page .contact-header {
-  background: white;
+  background: #E6E3E3;
 }
 
 .light-theme-page .contact-header h1 {
@@ -2587,7 +2593,7 @@ a.btn-map:hover {
 }
 
 .light-theme-page .contact-form .form-group {
-  background: white;
+  background: #E6E3E3;
 }
 
 .light-theme-page .contact-form .form-group label {
@@ -2596,7 +2602,7 @@ a.btn-map:hover {
 
 .light-theme-page .custom_submit img {
   background: var(--lightModeText);
-  padding: 2px;
+  padding: 3px;
   border-radius: 10px;
 }
 
@@ -2611,6 +2617,10 @@ a.btn-map:hover {
 
 .light-theme-page .home-carousel-absolute-text-box a {
   border-color: RGB(62, 62, 62) !important;
+}
+
+.light-theme-page .home-carousel-absolute-text-box a:hover{
+  border-color: white !important;
 }
 
 .light-theme-page .bg-black {
@@ -2643,7 +2653,7 @@ a.btn-map:hover {
 
 .light-theme-page .arrow-prior-box:hover {
   background: var(--goldText);
-  color: white;
+  color: white !important;
 }
 
 .light-theme-page .support-inline-right .btn-submit:hover {
@@ -3294,17 +3304,15 @@ a.btn-map:hover {
     z-index: 111;
     position: relative;
   }
+  .banner-service{
+    position: relative;
+    overflow: hidden !important;
+  }
   .banner-service .setting {
-    animation: none;
-    bottom: 0;
-    opacity: 1;
+    bottom: -135px;
   }
   .banner-service .setting .blur-bg {
     background: var(--hoverGold);
-  }
-  .banner-service .setting img {
-    opacity: 0.8;
-    scale: 1.5;
   }
 }
 
@@ -3317,6 +3325,9 @@ a.btn-map:hover {
 }
 
 @media (max-width: 500px) {
+  .banner-service .setting {
+    bottom: -120px;
+  }
   .main-navigation ul {
     gap: 2px;
   }
