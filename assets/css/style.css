@@ -1598,6 +1598,18 @@ footer {
 
 .contact-header_right svg circle {
   animation: rotatingSvg 0s infinite linear;
+  /* display: none; */
+  position: relative;
+  overflow: hidden;
+  background: red;
+}
+
+.contact-header_right svg circle::after{
+  position: absolute;
+  content: '';
+  inset: 0;
+  background: red;
+  z-index: 9;
 }
 
 .contact-form .form-group {
