@@ -486,7 +486,7 @@ img.dark-page {
   font-family: "Nohemi-Regular";
 }
 
-.second-box h3.wow.fadeInUp.colored{
+.second-box h3.wow.fadeInUp span.colored{
   color: rgb(255, 255, 255);
   transition: 1s;
   transition-delay: 1s;

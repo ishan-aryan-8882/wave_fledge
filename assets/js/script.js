@@ -345,19 +345,19 @@ $(document).ready(function () {
   }
 
   function addTransitionDelay() {
-    $(".second-box h3").each(function (index) {
-      $(this).css("transition-delay", index * 0.5 + 0.8 + "s");
+    $(".second-box h3 span").each(function (index) {
+      $(this).css("transition-delay", index * 0.1 + 0.1 + "s");
     });
   }
 
   function applyColorChange() {
-    $(".second-box h3").addClass("colored");
+    $(".second-box h3 span").addClass("colored");
     addTransitionDelay();
   }
 
-  $(window).scroll(function () {
+  $(".second-box h3").on("animationend", function () {
     if (allSecondBoxesInView()) {
       applyColorChange();
-    } 
+    }
   });
 });
