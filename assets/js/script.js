@@ -321,3 +321,43 @@ $(document).ready(function () {
   //--------------------------ending parenthesis-------------------------------------------------------------//
 });
 
+$(document).ready(function () {
+  function allSecondBoxesInView() {
+    var allInView = true;
+    $(".second-box").each(function () {
+      if (!isElementInViewport($(this)[0])) {
+        allInView = false;
+        return false;
+      }
+    });
+    return allInView;
+  }
+
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function addTransitionDelay() {
+    $(".second-box h3").each(function (index) {
+      $(this).css("transition-delay", index * 0.5 + 0.8 + "s");
+    });
+  }
+
+  function applyColorChange() {
+    $(".second-box h3").addClass("colored");
+    addTransitionDelay();
+  }
+
+  $(window).scroll(function () {
+    if (allSecondBoxesInView()) {
+      applyColorChange();
+    } 
+  });
+});

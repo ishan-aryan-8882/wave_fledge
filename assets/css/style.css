@@ -480,11 +480,16 @@ img.dark-page {
 }
 
 .about-hs h3 {
-  color: #ffffff;
+  color: #434343;
   font-size: 48px;
   letter-spacing: 0.8px;
   font-family: "Nohemi-Regular";
-  transition: all 5s !important;
+}
+
+.second-box h3.wow.fadeInUp.colored{
+  color: rgb(255, 255, 255);
+  transition: 1s;
+  transition-delay: 1s;
 }
 
 .light-theme-page .about-hs h3 {
@@ -519,14 +524,15 @@ img.dark-page {
   background: #717171;
 }
 
+.random-about h3.wow.fadeInUp .stagger-complete.animate{
+  color: rgb(255, 0, 0) !important;
+  transition: 1s;
+}
+
 .about-hs a:hover {
   color: white;
   background: var(--bgColor);
   border: 1px solid white;
-}
-
-.wow.fadeInUp.animated {
-  color: #2a2a2c !important;
 }
 
 .light-theme-page .wow.fadeInUp.animated {
