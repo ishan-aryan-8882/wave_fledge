@@ -488,14 +488,12 @@ img.dark-page {
 
 .second-box h3.wow.fadeInUp span.colored{
   color: rgb(255, 255, 255);
-  transition: 1s;
-  transition-delay: 1s;
+  transition: 2s;
 }
 
-.light-theme-page .second-box h3.wow.fadeInUp.colored{
+.light-theme-page .second-box h3.wow.fadeInUp span.colored{
   color: var(--actLight);
   transition: 1s;
-  transition-delay: 1s;
 }
 
 .light-theme-page .about-hs h3 {

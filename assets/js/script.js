@@ -346,7 +346,7 @@ $(document).ready(function () {
 
   function addTransitionDelay() {
     $(".second-box h3 span").each(function (index) {
-      $(this).css("transition-delay", index * 0.1 + 0.1 + "s");
+      $(this).css("transition-delay", index * 0.3 + 0.8 + "s");
     });
   }
 
